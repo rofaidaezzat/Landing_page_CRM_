@@ -9289,7 +9289,10 @@ function GrowingBusinesses() {
 }
 
 function BuiltForImages({ activeIndex }: { activeIndex: number }) {
-  const offset = activeIndex * 454;
+  // Mapping activeIndex (Real Estate: 0, Agencies: 1, Education: 2, Distributors: 3, Growing Business: 4)
+  // to DOM indices (Real Estate: 0, Distributors: 1, Education: 2, Agencies: 3, Growing Business: 4)
+  const positionMap = [0, 3, 2, 1, 4];
+  const offset = positionMap[activeIndex] * 454;
   return (
     <div 
       className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[111px] items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px] transition-all duration-500 ease-in-out" 
@@ -9297,9 +9300,9 @@ function BuiltForImages({ activeIndex }: { activeIndex: number }) {
       data-name="built for images"
     >
       <RealEstate />
-      <Agencies />
-      <Education />
       <Distributors />
+      <Education />
+      <Agencies />
       <GrowingBusinesses />
     </div>
   );
