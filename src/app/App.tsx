@@ -168,7 +168,7 @@ export default function App() {
   }, [portalTarget]);
 
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="w-full overflow-x-hidden relative">
       <LandingPage />
       {portalTarget  && createPortal(<BuiltFor />, portalTarget)}
       {ellipseTarget && createPortal(<Ellipse />, ellipseTarget)}
