@@ -10297,7 +10297,7 @@ export default function LandingPage() {
           </svg>
         </div>
       </div>
-      <div className="absolute bg-[#357724] left-[calc(100%-96px)] overflow-clip rounded-[99px] size-[48px] top-[760px]" data-name="icon btn">
+      <div className="fixed bg-[#357724] bottom-[24px] right-[24px] overflow-clip rounded-[99px] size-[48px] z-[9999] cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200" data-name="icon btn">
         <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-1/2" data-name="ic:baseline-whatsapp">
           <div className="absolute inset-[8.33%_8.54%]" data-name="Vector">
             <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19.9 20.0001">
