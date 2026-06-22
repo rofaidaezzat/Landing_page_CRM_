@@ -1,3 +1,8 @@
+import { useState } from "react";
+import svgAgencies from "./ChatGPT Image Jun 7, 2026, 11_41_54 AM 1.svg";
+import svgEducation from "./ChatGPT Image Jun 7, 2026, 11_44_51 AM 1.svg";
+import svgDistributors from "./ChatGPT Image Jun 7, 2026, 11_50_41 AM 1.svg";
+import svgGrowing from "./ChatGPT Image Jun 7, 2026, 11_55_35 AM 1.svg";
 import svgPaths from "./svg-mb1h8xnyqh";
 import imgBody from "./6afca4764cbbca8d2e3e0b7021acf8ed58bdb1d1.png";
 import imgFaviconReplaceMe from "./32b05d681406eb01e74cbd8b1e594012f005feee.png";
@@ -9240,7 +9245,7 @@ function Distributors() {
     <div className="h-[343px] relative shrink-0 w-[483px]" data-name="distributors">
       <div className="-translate-y-1/2 absolute aspect-[1215/818] left-[4.65%] right-[4.65%] top-[calc(50%+0.5px)]" data-name="ChatGPT Image Jun 7, 2026, 11_50_41 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[125.18%] left-[-13.42%] max-w-none top-[-16.99%] w-[126.42%]" src={imgChatGptImageJun72026115041Am1} />
+          <img alt="" className="absolute h-[125.18%] left-[-13.42%] max-w-none top-[-16.99%] w-[126.42%]" src={svgDistributors} />
         </div>
       </div>
     </div>
@@ -9252,7 +9257,7 @@ function Education() {
     <div className="h-[343px] relative shrink-0 w-[418px]" data-name="education">
       <div className="-translate-y-1/2 absolute aspect-[1240/689] left-0 right-0 top-1/2" data-name="ChatGPT Image Jun 7, 2026, 11_44_51 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[148.62%] left-[-14.03%] max-w-none top-[-34.98%] w-[123.87%]" src={imgChatGptImageJun72026114451Am1} />
+          <img alt="" className="absolute h-[148.62%] left-[-14.03%] max-w-none top-[-34.98%] w-[123.87%]" src={svgEducation} />
         </div>
       </div>
     </div>
@@ -9264,7 +9269,7 @@ function Agencies() {
     <div className="h-[343px] relative shrink-0 w-[438px]" data-name="agencies">
       <div className="-translate-x-1/2 absolute aspect-[1038/895] bottom-0 left-1/2 top-0" data-name="ChatGPT Image Jun 7, 2026, 11_41_54 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[114.41%] left-[-25.92%] max-w-none top-[-9.83%] w-[147.98%]" src={imgChatGptImageJun72026114154Am1} />
+          <img alt="" className="absolute h-[114.41%] left-[-25.92%] max-w-none top-[-9.83%] w-[147.98%]" src={svgAgencies} />
         </div>
       </div>
     </div>
@@ -9276,28 +9281,33 @@ function GrowingBusinesses() {
     <div className="h-[343px] relative shrink-0 w-[481px]" data-name="growing businesses">
       <div className="-translate-y-1/2 absolute aspect-[1085/807] left-0 right-0 top-1/2" data-name="ChatGPT Image Jun 7, 2026, 11_55_35 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="" className="absolute h-[126.89%] left-[-22.86%] max-w-none top-[-18.34%] w-[141.57%]" src={imgChatGptImageJun72026115535Am1} />
+          <img alt="" className="absolute h-[126.89%] left-[-22.86%] max-w-none top-[-18.34%] w-[141.57%]" src={svgGrowing} />
         </div>
       </div>
     </div>
   );
 }
 
-function BuiltForImages() {
+function BuiltForImages({ activeIndex }: { activeIndex: number }) {
+  const offset = activeIndex * 454;
   return (
-    <div className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[111px] items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px]" data-name="built for images">
+    <div 
+      className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[111px] items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px] transition-all duration-500 ease-in-out" 
+      style={{ transform: `translate(-50%, -${offset}px)` }}
+      data-name="built for images"
+    >
       <RealEstate />
-      <Distributors />
-      <Education />
       <Agencies />
+      <Education />
+      <Distributors />
       <GrowingBusinesses />
     </div>
   );
 }
 
-function Frame292() {
+function Frame292({ activeIndex }: { activeIndex: number }) {
   return (
-    <div className="absolute h-[475px] left-[496px] top-[96px] w-[703px]">
+    <div className="absolute h-[475px] left-[496px] top-[96px] w-[703px] overflow-hidden">
       <div className="absolute flex items-center justify-center left-[-151px] size-[1016.288px] top-[-152px]">
         <div className="flex-none rotate-45">
           <div className="h-[773.033px] relative w-[664.215px]">
@@ -9307,117 +9317,106 @@ function Frame292() {
           </div>
         </div>
       </div>
-      <BuiltForImages />
-    </div>
-  );
-}
-
-function Frame286() {
-  return (
-    <div className="bg-[#e6e9f1] relative rounded-tl-[12px] rounded-tr-[12px] shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex items-center justify-center px-[16px] py-[24px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[23px]">Real Estate</p>
-        </div>
+      <div className="absolute inset-0 overflow-hidden">
+        <BuiltForImages activeIndex={activeIndex} />
       </div>
     </div>
   );
 }
 
-function Frame287() {
-  return (
-    <button className="cursor-pointer relative shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex items-center justify-center px-[16px] py-[24px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[23px] text-left">Agencies</p>
-        </div>
-      </div>
-    </button>
-  );
+interface Frame285Props {
+  activeIndex: number;
+  setActiveIndex: (index: number) => void;
 }
 
-function Frame288() {
-  return (
-    <button className="cursor-pointer relative shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex items-center justify-center px-[16px] py-[24px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[23px] text-left">Education</p>
-        </div>
-      </div>
-    </button>
-  );
-}
+function Frame285({ activeIndex, setActiveIndex }: Frame285Props) {
+  const tabs = [
+    { name: "Real Estate", id: 0 },
+    { name: "Agencies", id: 1 },
+    { name: "Education", id: 2 },
+    { name: "Distributors", id: 3 },
+    { name: "Any Growing Business", id: 4 },
+  ];
 
-function Frame289() {
   return (
-    <button className="cursor-pointer relative shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex items-center justify-center px-[16px] py-[24px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[23px] text-left">Distributors</p>
-        </div>
-      </div>
-    </button>
-  );
-}
+    <div className="absolute content-stretch flex flex-col items-start left-[24px] rounded-[12px] top-[96px] w-[253px] bg-white overflow-hidden">
+      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[12px] z-10" />
+      {tabs.map((tab, idx) => {
+        const isActive = activeIndex === tab.id;
+        let roundedClasses = "";
+        if (idx === 0) roundedClasses = "rounded-tl-[12px] rounded-tr-[12px]";
+        if (idx === tabs.length - 1) roundedClasses = "rounded-bl-[12px] rounded-br-[12px]";
 
-function Frame290() {
-  return (
-    <button className="cursor-pointer relative shrink-0 w-full">
-      <div className="flex flex-row items-center justify-center size-full">
-        <div className="content-stretch flex items-center justify-center px-[16px] py-[24px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[23px] text-left">Any Growing Business</p>
-        </div>
-      </div>
-    </button>
-  );
-}
-
-function Frame285() {
-  return (
-    <div className="absolute content-stretch flex flex-col items-start left-[24px] rounded-[12px] top-[96px] w-[253px]">
-      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[12px]" />
-      <Frame286 />
-      <div className="h-0 relative shrink-0 w-[253px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 253 1">
-            <line id="Line 26" stroke="var(--stroke-0, #D4D5D8)" x2="253" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <Frame287 />
-      <div className="h-0 relative shrink-0 w-[253px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 253 1">
-            <line id="Line 26" stroke="var(--stroke-0, #D4D5D8)" x2="253" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <Frame288 />
-      <div className="h-0 relative shrink-0 w-[253px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 253 1">
-            <line id="Line 26" stroke="var(--stroke-0, #D4D5D8)" x2="253" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <Frame289 />
-      <div className="h-0 relative shrink-0 w-[253px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 253 1">
-            <line id="Line 26" stroke="var(--stroke-0, #D4D5D8)" x2="253" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <Frame290 />
+        return (
+          <div key={tab.id} className="w-full shrink-0">
+            <button
+              onClick={() => setActiveIndex(tab.id)}
+              className={`cursor-pointer w-full text-left transition-colors duration-200 ${
+                isActive ? "bg-[#e6e9f1] text-[#141414]" : "bg-transparent text-[#141414] hover:bg-[#f5f6fa]"
+              } ${roundedClasses}`}
+            >
+              <div className="flex flex-row items-center justify-center size-full">
+                <div className="content-stretch flex items-center justify-center px-[16px] py-[24px] relative size-full">
+                  <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[23px]">
+                    {tab.name}
+                  </p>
+                </div>
+              </div>
+            </button>
+            {idx < tabs.length - 1 && (
+              <div className="h-0 relative w-[253px]">
+                <div className="absolute inset-[-1px_0_0_0]">
+                  <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 253 1">
+                    <line id="Line 26" stroke="var(--stroke-0, #D4D5D8)" x2="253" y1="0.5" y2="0.5" />
+                  </svg>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
 
-function Frame291() {
+interface Frame291Props {
+  activeIndex: number;
+}
+
+function Frame291({ activeIndex }: Frame291Props) {
+  const content = [
+    {
+      title: "Real Estate",
+      desc: "Manage property inquiries, track prospects, and close deals faster.",
+    },
+    {
+      title: "Agencies",
+      desc: "Organize clients, projects, and opportunities in one place.",
+    },
+    {
+      title: "Education",
+      desc: "Manage student inquiries and improve enrollment follow-ups.",
+    },
+    {
+      title: "Distributors",
+      desc: "Track customer relationships and streamline sales operations.",
+    },
+    {
+      title: "Growing Business",
+      desc: "Simplify sales workflows and grow customer relationships.",
+    },
+  ];
+
+  const activeContent = content[activeIndex] || content[0];
+
   return (
     <div className="-translate-y-1/2 [word-break:break-word] absolute content-stretch flex flex-col gap-[24px] items-start left-[317px] not-italic top-[calc(50%-133px)] w-[221px]">
-      <p className="font-['Inter:Medium',sans-serif] font-medium h-[24px] leading-[normal] relative shrink-0 text-[#141414] text-[28px] w-full">Real Estate</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#464646] text-[16px] w-full">Manage property inquiries, track prospects, and close deals faster.</p>
+      <p className="font-['Inter:Medium',sans-serif] font-medium h-[24px] leading-[normal] relative shrink-0 text-[#141414] text-[28px] w-full">
+        {activeContent.title}
+      </p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#464646] text-[16px] w-full">
+        {activeContent.desc}
+      </p>
     </div>
   );
 }
@@ -9987,6 +9986,8 @@ function Form() {
 }
 
 function Frame296() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <div className="content-stretch flex flex-col gap-[120px] items-center justify-center relative shrink-0 w-[1248px]">
       <Hero />
@@ -9994,12 +9995,12 @@ function Frame296() {
       <FeaturesSection />
       <div className="bg-white h-[572px] relative rounded-[28px] shrink-0 w-[1200px]" data-name="built for">
         <div className="overflow-clip relative rounded-[inherit] size-full">
-          <Frame292 />
+          <Frame292 activeIndex={activeIndex} />
           <p className="[word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[normal] left-[24px] not-italic text-[#141414] text-[40px] top-[24px] w-[458px]" dir="auto">
             For different sectors
           </p>
-          <Frame285 />
-          <Frame291 />
+          <Frame285 activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+          <Frame291 activeIndex={activeIndex} />
         </div>
         <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[28px]" />
       </div>
