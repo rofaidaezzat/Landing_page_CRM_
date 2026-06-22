@@ -9289,28 +9289,23 @@ function GrowingBusinesses() {
 }
 
 function BuiltForImages({ activeIndex }: { activeIndex: number }) {
-  // Mapping activeIndex (Real Estate: 0, Agencies: 1, Education: 2, Distributors: 3, Growing Business: 4)
-  // to DOM indices (Real Estate: 0, Distributors: 1, Education: 2, Agencies: 3, Growing Business: 4)
-  const positionMap = [0, 3, 2, 1, 4];
-  const offset = positionMap[activeIndex] * 454;
   return (
     <div 
-      className="-translate-x-1/2 absolute content-stretch flex flex-col gap-[111px] items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px] transition-all duration-500 ease-in-out" 
-      style={{ transform: `translate(-50%, -${offset}px)` }}
+      className="-translate-x-1/2 absolute content-stretch flex flex-col items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px]" 
       data-name="built for images"
     >
-      <RealEstate />
-      <Distributors />
-      <Education />
-      <Agencies />
-      <GrowingBusinesses />
+      {activeIndex === 0 && <RealEstate />}
+      {activeIndex === 1 && <Agencies />}
+      {activeIndex === 2 && <Education />}
+      {activeIndex === 3 && <Distributors />}
+      {activeIndex === 4 && <GrowingBusinesses />}
     </div>
   );
 }
 
 function Frame292({ activeIndex }: { activeIndex: number }) {
   return (
-    <div className="absolute h-[475px] left-[496px] top-[96px] w-[703px] overflow-hidden">
+    <div className="absolute h-[475px] left-[496px] top-[96px] w-[703px]">
       <div className="absolute flex items-center justify-center left-[-151px] size-[1016.288px] top-[-152px]">
         <div className="flex-none rotate-45">
           <div className="h-[773.033px] relative w-[664.215px]">
@@ -9320,9 +9315,7 @@ function Frame292({ activeIndex }: { activeIndex: number }) {
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 overflow-hidden">
-        <BuiltForImages activeIndex={activeIndex} />
-      </div>
+      <BuiltForImages activeIndex={activeIndex} />
     </div>
   );
 }
