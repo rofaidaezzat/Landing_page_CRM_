@@ -9290,8 +9290,8 @@ function GrowingBusinesses() {
 
 function BuiltForImages({ activeIndex }: { activeIndex: number }) {
   return (
-    <div 
-      className="-translate-x-1/2 absolute content-stretch flex flex-col items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px]" 
+    <div
+      className="-translate-x-1/2 absolute content-stretch flex flex-col items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px]"
       data-name="built for images"
     >
       {activeIndex === 0 && <RealEstate />}
@@ -9347,9 +9347,8 @@ function Frame285({ activeIndex, setActiveIndex }: Frame285Props) {
           <div key={tab.id} className="w-full shrink-0">
             <button
               onClick={() => setActiveIndex(tab.id)}
-              className={`cursor-pointer w-full text-left transition-colors duration-200 ${
-                isActive ? "bg-[#e6e9f1] text-[#141414]" : "bg-transparent text-[#141414] hover:bg-[#f5f6fa]"
-              } ${roundedClasses}`}
+              className={`cursor-pointer w-full text-left transition-colors duration-200 ${isActive ? "bg-[#e6e9f1] text-[#141414]" : "bg-transparent text-[#141414] hover:bg-[#f5f6fa]"
+                } ${roundedClasses}`}
             >
               <div className="flex flex-row items-center justify-center size-full">
                 <div className="content-stretch flex items-center justify-center px-[16px] py-[24px] relative size-full">
