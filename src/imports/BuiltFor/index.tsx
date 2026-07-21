@@ -74,9 +74,9 @@ export default function BuiltFor() {
   };
 
   return (
-    <div id="faq-section" className="bg-white relative rounded-[28px] shrink-0 w-[1248px] p-[32px] z-10 border border-[#d4d5d8] shadow-sm" data-name="built for">
-      <div className="content-stretch flex flex-col gap-[24px] items-start relative w-full">
-        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[40px] w-[458px]" dir="auto">
+    <div id="faq-section" className="bg-white relative rounded-[28px] shrink-0 w-full max-w-[1248px] p-[16px] sm:p-[32px] z-10 border border-[#d4d5d8] shadow-sm" data-name="built for">
+      <div className="content-stretch flex flex-col gap-[24px] items-start relative w-full self-stretch">
+        <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[32px] sm:text-[40px] self-stretch w-full" dir="auto">
           FAQs
         </p>
 
@@ -85,23 +85,23 @@ export default function BuiltFor() {
             const isOpen = openId === item.id;
 
             return (
-              <div key={item.id} className="w-full py-[16px] transition-all duration-200" data-name="faq item">
+              <div key={item.id} className="w-full self-stretch transition-all duration-200" data-name="faq item">
                 <button
                   type="button"
                   onClick={() => toggleFaq(item.id)}
-                  className="w-full content-stretch cursor-pointer flex gap-[16px] items-center justify-between py-[8px] text-left focus:outline-none group"
+                  className="w-full self-stretch min-h-[56px] h-auto p-[16px] cursor-pointer flex flex-row items-center justify-between gap-[16px] text-left focus:outline-none group"
                 >
-                  <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] text-[#141414] text-[19px] group-hover:text-[#00236f] transition-colors">
+                  <p className="[word-break:break-word] flex-1 font-['Inter:Medium',sans-serif] font-medium leading-[1.4] text-[#141414] text-[16px] sm:text-[19px] group-hover:text-[#00236f] transition-colors whitespace-normal">
                     {item.question}
                   </p>
-                  <div className="p-1 rounded-full hover:bg-slate-100 transition-colors">
+                  <div className="p-1 rounded-full hover:bg-slate-100 transition-colors shrink-0">
                     {isOpen ? <MinusIcon /> : <PlusIcon />}
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="mt-[12px] pb-[8px] pr-[32px] sector-image-fade">
-                    <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.6] text-[#464646] text-[16px] text-left w-full">
+                  <div className="px-[16px] pb-[16px] sector-image-fade">
+                    <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.6] text-[#464646] text-[14px] sm:text-[16px] text-left w-full">
                       {item.answer}
                     </p>
                   </div>

@@ -180,18 +180,136 @@ export function Frame291({ activeIndex }: Frame291Props) {
   );
 }
 
+function MobileFrame285({ activeIndex, setActiveIndex }: Frame285Props) {
+  const tabs = [
+    { name: "Real Estate", id: 0 },
+    { name: "Agencies", id: 1 },
+    { name: "Education", id: 2 },
+    { name: "Distributors", id: 3 },
+    { name: "Any Growing Business", id: 4 },
+  ];
+
+  return (
+    <div className="flex gap-2 overflow-x-auto pb-2 w-full shrink-0 z-30">
+      {tabs.map((tab) => {
+        const isActive = activeIndex === tab.id;
+        return (
+          <button
+            key={tab.id}
+            type="button"
+            onClick={() => setActiveIndex(tab.id)}
+            className={`px-4 py-2 rounded-full whitespace-nowrap text-[14px] sm:text-[16px] font-medium transition-all duration-200 shrink-0 cursor-pointer border ${
+              isActive
+                ? "bg-[#00236f] text-white border-[#00236f] shadow-sm"
+                : "bg-white text-[#464646] border-[#d4d5d8] hover:bg-[#f5f6fa]"
+            }`}
+          >
+            {tab.name}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function MobileFrame291({ activeIndex }: Frame291Props) {
+  const content = [
+    {
+      title: "Real Estate",
+      desc: "Manage property inquiries, track prospects, and close deals faster.",
+    },
+    {
+      title: "Agencies",
+      desc: "Organize clients, projects, and opportunities in one place.",
+    },
+    {
+      title: "Education",
+      desc: "Manage student inquiries and improve enrollment follow-ups.",
+    },
+    {
+      title: "Distributors",
+      desc: "Track customer relationships and streamline sales operations.",
+    },
+    {
+      title: "Growing Business",
+      desc: "Simplify sales workflows and grow customer relationships.",
+    },
+  ];
+
+  const activeContent = content[activeIndex] || content[0];
+
+  return (
+    <div key={activeIndex} className="flex flex-col gap-1 w-full py-1 sector-image-fade">
+      <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[20px] sm:text-[24px]">
+        {activeContent.title}
+      </p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal text-[#464646] text-[14px] sm:text-[16px] leading-[1.4]">
+        {activeContent.desc}
+      </p>
+    </div>
+  );
+}
+
+function MobileBuiltForImages({ activeIndex }: { activeIndex: number }) {
+  return (
+    <div
+      key={activeIndex}
+      className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 top-1/2 content-stretch flex items-center justify-center w-[340px] sm:w-[420px] h-[260px] sm:h-[300px] sector-image-fade pointer-events-none z-10 scale-[0.75] sm:scale-90"
+      data-name="mobile built for images"
+    >
+      {activeIndex === 0 && <RealEstate />}
+      {activeIndex === 1 && <Agencies />}
+      {activeIndex === 2 && <Education />}
+      {activeIndex === 3 && <Distributors />}
+      {activeIndex === 4 && <GrowingBusinesses />}
+    </div>
+  );
+}
+
+function MobileFrame292({ activeIndex }: { activeIndex: number }) {
+  return (
+    <div className="relative w-full h-[320px] sm:h-[380px] flex items-center justify-center overflow-hidden rounded-[24px] bg-white mt-1">
+      {/* Background 45deg rotated dark blue ellipse matching desktop background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="scale-[0.45] sm:scale-[0.55] origin-center pointer-events-none flex items-center justify-center">
+          <div className="rotate-45 pointer-events-none">
+            <div className="h-[773.033px] relative w-[664.215px] pointer-events-none rounded-[773.033px] bg-[#00236F]">
+              <svg className="absolute block inset-0 size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 664.215 773.033">
+                <ellipse cx="332.107" cy="386.517" fill="var(--fill-0, #00236F)" id="Ellipse 5" rx="332.107" ry="386.517" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Centered Sector 3D Image */}
+      <MobileBuiltForImages activeIndex={activeIndex} />
+    </div>
+  );
+}
+
 export default function SectorsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div id="sectors-section" className="bg-white h-[572px] relative rounded-[28px] shrink-0 w-[1200px] z-10" data-name="built for">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
-        <Frame292 activeIndex={activeIndex} />
-        <p className="[word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[normal] left-[24px] not-italic text-[#141414] text-[40px] top-[24px] w-[458px] pointer-events-none" dir="auto">
+    <div id="sectors-section" className="bg-white min-h-[572px] lg:h-[572px] relative rounded-[28px] shrink-0 w-full max-w-[1200px] z-10 overflow-hidden" data-name="built for">
+      <div className="relative rounded-[inherit] size-full min-h-[572px] p-4 sm:p-6 lg:p-0">
+        <p className="[word-break:break-word] relative lg:absolute font-['Inter:Bold',sans-serif] font-bold leading-[normal] lg:left-[24px] lg:top-[24px] not-italic text-[#141414] text-[28px] sm:text-[36px] lg:text-[40px] w-full lg:w-[458px] pointer-events-none mb-4 lg:mb-0" dir="auto">
           For different sectors
         </p>
-        <Frame285 activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
-        <Frame291 activeIndex={activeIndex} />
+
+        {/* Large screens (lg): 100% exact original desktop layout */}
+        <div className="hidden lg:block">
+          <Frame292 activeIndex={activeIndex} />
+          <Frame285 activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+          <Frame291 activeIndex={activeIndex} />
+        </div>
+
+        {/* Mobile screens (< lg): Mobile-optimized responsive layout */}
+        <div className="flex lg:hidden flex-col gap-3">
+          <MobileFrame285 activeIndex={activeIndex} setActiveIndex={setActiveIndex} />
+          <MobileFrame291 activeIndex={activeIndex} />
+          <MobileFrame292 activeIndex={activeIndex} />
+        </div>
       </div>
       <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[28px]" />
     </div>

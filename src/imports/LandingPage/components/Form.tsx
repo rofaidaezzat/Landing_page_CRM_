@@ -1,89 +1,22 @@
 import { useState } from "react";
 import svgPaths from "../svg-mb1h8xnyqh";
 
-function Frame294() {
+function StepBadge({ num }: { num: string }) {
   return (
-    <div className="content-stretch flex flex-col items-center justify-center px-[28px] py-[14px] relative rounded-[99px] shrink-0 w-[56px]">
-      <div aria-hidden className="absolute border-3 border-[#00236f] border-dashed inset-0 pointer-events-none rounded-[99px]" />
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        1
+    <div className="content-stretch flex flex-col gap-[8px] items-center justify-center relative rounded-[99px] shrink-0 w-[56px] h-[56px] border-3 border-[#00236f] border-dashed">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#464646] text-[19px] sm:text-[23px] text-center" dir="auto">
+        {num}
       </p>
     </div>
   );
 }
 
-function Frame293() {
+function StepItem({ num, text }: { num: string; text: string }) {
   return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
-      <Frame294 />
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        Fill the contact form.
-      </p>
-    </div>
-  );
-}
-
-function Frame298() {
-  return (
-    <div className="content-stretch flex flex-col items-center justify-center px-[28px] py-[14px] relative rounded-[99px] shrink-0 w-[56px]">
-      <div aria-hidden className="absolute border-3 border-[#00236f] border-dashed inset-0 pointer-events-none rounded-[99px]" />
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        2
-      </p>
-    </div>
-  );
-}
-
-function Frame295() {
-  return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
-      <Frame298 />
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        Meet with a company representative.
-      </p>
-    </div>
-  );
-}
-
-function Frame308() {
-  return (
-    <div className="content-stretch flex flex-col items-center justify-center px-[28px] py-[14px] relative rounded-[99px] shrink-0 w-[56px]">
-      <div aria-hidden className="absolute border-3 border-[#00236f] border-dashed inset-0 pointer-events-none rounded-[99px]" />
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        3
-      </p>
-    </div>
-  );
-}
-
-function Frame299() {
-  return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0 w-full">
-      <Frame308 />
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        Choose your plan or customize one.
-      </p>
-    </div>
-  );
-}
-
-function Frame314() {
-  return (
-    <div className="content-stretch flex flex-col items-center justify-center px-[28px] py-[14px] relative rounded-[99px] shrink-0 w-[56px]">
-      <div aria-hidden className="absolute border-3 border-[#00236f] border-dashed inset-0 pointer-events-none rounded-[99px]" />
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        4
-      </p>
-    </div>
-  );
-}
-
-function Frame309() {
-  return (
-    <div className="content-stretch flex gap-[16px] items-center relative shrink-0">
-      <Frame314 />
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#464646] text-[23px] whitespace-nowrap" dir="auto">
-        Start selling smarter with your Sales CRM.
+    <div className="content-stretch flex gap-[12px] sm:gap-[16px] items-center relative shrink-0 w-full">
+      <StepBadge num={num} />
+      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#464646] text-[19px] sm:text-[23px] flex-1" dir="auto">
+        {text}
       </p>
     </div>
   );
@@ -91,19 +24,19 @@ function Frame309() {
 
 function Frame284() {
   return (
-    <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-[573px]">
-      <Frame293 />
-      <Frame295 />
-      <Frame299 />
-      <Frame309 />
+    <div className="content-stretch flex flex-col gap-[20px] sm:gap-[24px] items-start relative shrink-0 w-full lg:w-[573px]">
+      <StepItem num="1" text="Fill the contact form." />
+      <StepItem num="2" text="Meet with a company representative." />
+      <StepItem num="3" text="Choose your plan or customize one." />
+      <StepItem num="4" text="Start selling smarter with your Sales CRM." />
     </div>
   );
 }
 
 function Frame283() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-start relative shrink-0">
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[40px] whitespace-nowrap" dir="auto">
+    <div className="content-stretch flex flex-col gap-[24px] sm:gap-[32px] items-start relative shrink-0 w-full self-stretch">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[33px] sm:text-[40px] self-stretch w-full">
         Get Started in 4 Simple Steps
       </p>
       <Frame284 />
@@ -154,7 +87,7 @@ function Frame339() {
 
 function Frame315() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 mt-[24px] lg:mt-0">
       <Frame338 />
       <Frame339 />
     </div>
@@ -163,7 +96,7 @@ function Frame315() {
 
 function Frame282() {
   return (
-    <div className="content-stretch flex flex-col items-start justify-between relative self-stretch shrink-0">
+    <div className="content-stretch flex flex-col items-start justify-between relative self-stretch shrink-0 w-full lg:w-auto">
       <Frame283 />
       <Frame315 />
     </div>
@@ -192,7 +125,7 @@ function Frame73() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="content-stretch flex flex-col gap-[20px] items-end justify-center p-[24px] relative rounded-[12px] shrink-0 w-[507px] border border-[#d4d5d8] bg-white z-20"
+      className="content-stretch flex flex-col gap-[20px] items-end justify-center p-[16px] sm:p-[24px] relative rounded-[12px] shrink-0 w-full lg:w-[507px] border border-[#d4d5d8] bg-white z-20"
     >
       <div className="content-stretch flex flex-col gap-[14px] items-start relative shrink-0 w-full">
         {/* Full Name */}
@@ -275,8 +208,8 @@ function Frame73() {
 
 export default function Form() {
   return (
-    <div id="get-started" className="bg-white relative rounded-[28px] shrink-0 w-[1200px] scroll-mt-6" data-name="form">
-      <div className="content-stretch flex items-start justify-between overflow-clip p-[32px] relative rounded-[inherit] size-full">
+    <div id="get-started" className="bg-white relative rounded-[28px] shrink-0 w-full max-w-[1200px] scroll-mt-6" data-name="form">
+      <div className="content-stretch flex flex-col lg:flex-row items-stretch justify-between gap-[32px] overflow-clip p-[16px] sm:p-[32px] relative rounded-[inherit] size-full">
         <Frame282 />
         <Frame73 />
       </div>

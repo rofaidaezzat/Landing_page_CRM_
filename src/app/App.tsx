@@ -126,7 +126,7 @@ export default function App() {
     const oldFaq = allBuiltFor[1] as HTMLElement | null;
     if (oldFaq?.parentElement) {
       const wrapper = document.createElement("div");
-      wrapper.className = "shrink-0 w-[1248px]";
+      wrapper.className = "shrink-0 w-full max-w-[1248px]";
       wrapper.setAttribute("data-faq-portal", "true");
       oldFaq.parentElement.insertBefore(wrapper, oldFaq);
       oldFaq.style.display = "none";

@@ -189,7 +189,7 @@ function Frame69() {
 
 function Frame341() {
   return (
-    <div className="content-stretch flex items-start justify-between relative shrink-0 w-[1200px]">
+    <div className="content-stretch flex flex-col md:flex-row gap-[32px] md:gap-[16px] items-start justify-between relative shrink-0 w-full max-w-[1200px]">
       <Frame71 />
       <Frame70 />
       <Frame69 />
@@ -208,7 +208,7 @@ function Copyright() {
             </svg>
           </div>
         </div>
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic relative shrink-0 text-[#f5f6fa] text-[13px] whitespace-nowrap">Copyright 2026 Sales CRM All Rights Reserved.</p>
+        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[1.4] not-italic relative shrink-0 text-[#f5f6fa] text-[12px] sm:text-[13px]">Copyright 2026 Sales CRM All Rights Reserved.</p>
       </div>
     </div>
   );
@@ -216,7 +216,7 @@ function Copyright() {
 
 function Paragraph() {
   return (
-    <div className="content-stretch flex h-[20px] items-start relative shrink-0" data-name="Paragraph">
+    <div className="content-stretch flex items-start relative shrink-0" data-name="Paragraph">
       <Copyright />
     </div>
   );
@@ -226,7 +226,7 @@ export default function Footer() {
   return (
     <div className="bg-[#00236f] relative shrink-0 w-full" data-name="Footer">
       <div className="flex flex-col items-center justify-center overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex flex-col gap-[56px] items-center justify-center px-[96px] py-[40px] relative size-full">
+        <div className="content-stretch flex flex-col gap-[32px] sm:gap-[56px] items-center justify-center px-[20px] sm:px-[40px] md:px-[96px] py-[32px] sm:py-[40px] relative size-full">
           <Frame341 />
           <Paragraph />
         </div>

@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 function Frame296() {
   return (
-    <div className="content-stretch flex flex-col gap-[120px] items-center justify-center relative shrink-0 w-[1248px]">
+    <div className="content-stretch flex flex-col gap-[40px] md:gap-[80px] lg:gap-[120px] items-center justify-center relative shrink-0 w-full max-w-[1248px] px-4 sm:px-6">
       <Hero />
       <ProblemSection />
       <FeaturesSection />
@@ -25,11 +25,11 @@ function Frame296() {
 
 export default function LandingPage() {
   return (
-    <div className="bg-[#f5f6fa] content-stretch flex flex-col gap-[120px] items-center relative size-full" data-name="Landing page">
+    <div className="bg-[#f5f6fa] content-stretch flex flex-col gap-[40px] md:gap-[80px] lg:gap-[120px] items-center relative size-full max-w-full overflow-x-hidden" data-name="Landing page">
       <Navbar />
       <Frame296 />
       <Footer />
-      <div className="absolute left-[calc(58.33%-21px)] size-[189px] top-[3955px] pointer-events-none">
+      <div className="absolute left-[calc(58.33%-21px)] size-[189px] top-[3955px] pointer-events-none hidden lg:block">
         <div className="absolute inset-[-158.73%] pointer-events-none">
           <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
             <g filter="url(#filter0_f_1_3940)" id="Ellipse 2">
@@ -45,7 +45,7 @@ export default function LandingPage() {
           </svg>
         </div>
       </div>
-      <div className="absolute left-[calc(8.33%+123px)] size-[189px] top-[4619px] pointer-events-none">
+      <div className="absolute left-[calc(8.33%+123px)] size-[189px] top-[4619px] pointer-events-none hidden lg:block">
         <div className="absolute inset-[-158.73%] pointer-events-none">
           <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
             <g filter="url(#filter0_f_1_3940)" id="Ellipse 2">
@@ -61,7 +61,7 @@ export default function LandingPage() {
           </svg>
         </div>
       </div>
-      <div className="absolute left-[96px] size-[189px] top-[699px] pointer-events-none">
+      <div className="absolute left-[96px] size-[189px] top-[699px] pointer-events-none hidden lg:block">
         <div className="absolute inset-[-158.73%] pointer-events-none">
           <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
             <g filter="url(#filter0_f_1_3940)" id="Ellipse 2">
@@ -77,7 +77,7 @@ export default function LandingPage() {
           </svg>
         </div>
       </div>
-      <div className="fixed bg-[#357724] bottom-[24px] right-[24px] overflow-clip rounded-[99px] size-[48px] z-[9999] cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200" data-name="icon btn">
+      <div className="fixed bg-[#357724] bottom-[24px] right-[24px] overflow-clip rounded-[99px] size-[48px] z-[9999] cursor-pointer hover:scale-105 active:scale-95 transition-all duration-200 shadow-lg" data-name="icon btn">
         <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-1/2" data-name="ic:baseline-whatsapp">
           <div className="absolute inset-[8.33%_8.54%]" data-name="Vector">
             <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 19.9 20.0001">

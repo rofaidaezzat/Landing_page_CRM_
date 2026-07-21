@@ -11,15 +11,15 @@ import imgFrame1321318762 from "../b6764f22bca8a554248382ae906386805259a659.png"
 
 function Frame2() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-col gap-[24px] items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full whitespace-pre-wrap">
+    <div className="[word-break:break-word] content-stretch flex flex-col gap-[16px] sm:gap-[24px] items-center justify-center leading-[0] not-italic relative shrink-0 text-center w-full whitespace-pre-wrap">
       <div className="font-['Inter:Bold',sans-serif] font-bold relative shrink-0 text-[#141414] text-[0px] w-full">
-        <p className="mb-0 text-[64px]">
+        <p className="mb-0 text-[32px] sm:text-[48px] md:text-[64px]">
           <span className="leading-[normal]">{`Grow Your `}</span>
           <span className="leading-[normal] text-[#00236f]">Business</span>
         </p>
-        <p className="leading-[normal] text-[64px]">{` With Smarter Sales CRM`}</p>
+        <p className="leading-[normal] text-[32px] sm:text-[48px] md:text-[64px]">{` With Smarter Sales CRM`}</p>
       </div>
-      <div className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 text-[#464646] text-[16px] w-full">
+      <div className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 text-[#464646] text-[14px] sm:text-[16px] w-full px-2">
         <p className="leading-[1.4] mb-0">{`Everything your sales team needs to organize leads, track performance, `}</p>
         <p className="leading-[1.4]">and drive consistent revenue growth from a single platform.</p>
       </div>
@@ -29,7 +29,7 @@ function Frame2() {
 
 function FluentCursorClick24Regular() {
   return (
-    <div className="absolute left-[713.5px] size-[63px] top-[169px]" data-name="fluent:cursor-click-24-regular">
+    <div className="absolute right-4 sm:left-[713.5px] size-[40px] sm:size-[63px] top-[140px] sm:top-[169px] hidden sm:block" data-name="fluent:cursor-click-24-regular">
       <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 63 63">
         <g id="fluent:cursor-click-24-regular">
           <path d={svgPaths.p1e6e5180} fill="var(--fill-0, #141414)" id="Vector" />
@@ -48,15 +48,15 @@ function Frame3() {
   };
 
   return (
-    <div className="content-stretch flex flex-col gap-[32px] items-center justify-center relative shrink-0 w-[787px]">
+    <div className="content-stretch flex flex-col gap-[24px] sm:gap-[32px] items-center justify-center relative shrink-0 w-full max-w-[787px] px-4">
       <Frame2 />
       <button
         type="button"
         onClick={scrollToGetStarted}
-        className="bg-[#00236f] hover:bg-[#001c59] active:scale-95 transition-all duration-200 cursor-pointer content-stretch drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] flex h-[56px] items-center justify-center px-[24px] py-[8px] relative rounded-[12px] shrink-0"
+        className="bg-[#00236f] hover:bg-[#001c59] active:scale-95 transition-all duration-200 cursor-pointer content-stretch drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] flex h-[48px] sm:h-[56px] items-center justify-center px-[24px] py-[8px] relative rounded-[12px] shrink-0"
         data-name="btns"
       >
-        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#f5f6fa] text-[16px] text-center whitespace-nowrap">
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#f5f6fa] text-[15px] sm:text-[16px] text-center whitespace-nowrap">
           Book A Free Meeting
         </p>
       </button>

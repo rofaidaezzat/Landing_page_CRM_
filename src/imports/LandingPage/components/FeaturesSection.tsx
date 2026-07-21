@@ -12,9 +12,9 @@ import imgFrame1321318650 from "../94adbfd3f0ba01e1f67b07640c8a619b78a50bbf.png"
 
 function Frame265() {
   return (
-    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[20px] h-[114px] items-start min-w-[360px] not-italic relative">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] relative shrink-0 text-[#141414] text-[23px] w-full">Keep every lead organized in one place</p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#464646] text-[16px] w-full">Capture, track, and update leads without spreadsheets or scattered notes. View contact details, inquiries, follow-up dates, and sales notes in a single workspace.</p>
+    <div className="[word-break:break-word] content-stretch flex flex-[1_0_0] flex-col gap-[12px] sm:gap-[20px] h-auto lg:h-[114px] items-start min-w-full lg:min-w-[360px] not-italic relative">
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[tight] sm:leading-[normal] relative shrink-0 text-[#141414] text-[18px] sm:text-[23px] w-full">Keep every lead organized in one place</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#464646] text-[14px] sm:text-[16px] w-full">Capture, track, and update leads without spreadsheets or scattered notes. View contact details, inquiries, follow-up dates, and sales notes in a single workspace.</p>
     </div>
   );
 }
@@ -6946,13 +6946,66 @@ function Frame297() {
   );
 }
 
+function MobileFrame297() {
+  const scrollToGetStarted = () => {
+    const el = document.getElementById("get-started");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="flex flex-col gap-4 items-start w-full mt-2">
+      <div className="[word-break:break-word] flex flex-col gap-2 items-start w-full">
+        <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[20px] sm:text-[23px] w-full">
+          See what drives results
+        </p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] text-[#464646] text-[14px] sm:text-[16px] w-full">
+          Track lead activity, completed deals, follow-ups, and reporting metrics across your sales team.
+        </p>
+      </div>
+      <button
+        type="button"
+        onClick={scrollToGetStarted}
+        className="w-full bg-[#00236f] hover:bg-[#001c59] active:scale-95 transition-all duration-200 cursor-pointer drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] flex h-[48px] items-center justify-center px-[24px] py-[8px] rounded-[12px]"
+      >
+        <p className="font-['Inter:Medium',sans-serif] font-medium text-[#f5f6fa] text-[16px] text-center whitespace-nowrap">
+          Get Started
+        </p>
+      </button>
+    </div>
+  );
+}
+
+function MobileFrame276() {
+  return (
+    <div className="relative w-full h-[300px] sm:h-[350px] bg-white rounded-[20px] border border-[#d4d5d8] overflow-hidden flex items-center justify-center p-2">
+      <div className="scale-[0.68] sm:scale-80 origin-center relative w-[500px] h-[380px] flex items-center justify-center pointer-events-none">
+        <StatusTimeline />
+        <Frame169 />
+        <div className="absolute bg-white bottom-[246px] content-stretch flex h-[96px] items-center justify-center left-[44px] overflow-clip px-[24px] py-[32px] rounded-[12px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.11)] w-[256px]">
+          <Frame133 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Frame275() {
   return (
-    <div className="bg-[#f5f6fa] h-[448px] relative rounded-[28px] shrink-0 w-full">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
+    <div className="bg-[#f5f6fa] min-h-[448px] h-auto lg:h-[448px] relative rounded-[28px] shrink-0 w-full p-4 sm:p-6 lg:p-0 overflow-hidden">
+      {/* Desktop view (lg) */}
+      <div className="hidden lg:block overflow-clip relative rounded-[inherit] size-full">
         <Frame276 />
         <Frame297 />
       </div>
+
+      {/* Mobile view (< lg) */}
+      <div className="flex lg:hidden flex-col gap-2 w-full">
+        <MobileFrame276 />
+        <MobileFrame297 />
+      </div>
+
       <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[28px]" />
     </div>
   );
@@ -6971,8 +7024,8 @@ function Frame310() {
 
 function Frame321() {
   return (
-    <div className="absolute content-stretch flex flex-col gap-[40px] items-center left-[32px] top-[32px] w-[1136px]">
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[40px] text-center w-full">Everything your sales team needs in one platform.</p>
+    <div className="relative lg:absolute content-stretch flex flex-col gap-[20px] sm:gap-[40px] items-center lg:left-[32px] lg:top-[32px] w-full lg:w-[1136px] px-2 sm:px-4 lg:px-0">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[1.25] sm:leading-[normal] not-italic relative shrink-0 text-[#141414] text-[22px] sm:text-[32px] lg:text-[40px] text-center w-full">Everything your sales team needs in one platform.</p>
       <Frame310 />
     </div>
   );
@@ -7314,13 +7367,53 @@ function LeadFormNotFilledModal() {
   );
 }
 
+function MobileAi() {
+  return (
+    <div className="flex lg:hidden flex-col gap-4 w-full p-4 sm:p-6">
+      <div className="bg-[#00236f] rounded-[24px] rounded-tr-[60px] sm:rounded-tr-[80px] p-6 sm:p-8 w-full text-white">
+        <p className="font-['Inter:Bold',sans-serif] font-bold text-[26px] sm:text-[32px] mb-3 text-[#f5f6fa]">
+          Work Smarter with AI
+        </p>
+        <p className="font-['Inter:Regular',sans-serif] font-normal text-[#c5c5c5] text-[14px] sm:text-[16px] leading-[1.4]">
+          Boost efficiency with smart features designed to simplify daily workflows and help your sales team accomplish more in less time.
+        </p>
+      </div>
+
+      <div className="relative w-full bg-[#f5f6fa] rounded-[20px] p-4 border border-[#d4d5d8] overflow-hidden">
+        <div className="content-stretch flex items-center justify-between pb-3 mb-2 border-b border-[#d4d5d8]">
+          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[15px]">
+            Lead Form Questions
+          </p>
+          <div className="bg-[#e6e9f1] px-3 py-1 rounded-full border border-[#00194f] flex items-center gap-1.5">
+            <span className="text-[#00194f] text-[13px] font-medium">✨ AI Suggestion</span>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2 mt-2">
+          <p className="font-['Inter:Regular',sans-serif] text-[14px] text-[#141414]">
+            How much is your budget ? <span className="text-[#00236f]">*</span>
+          </p>
+          <div className="h-[44px] border border-[#d4d5d8] rounded-[8px] bg-white px-3 flex items-center text-[#747474] text-[13px]">
+            Input text
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Ai() {
   return (
-    <div className="bg-white h-[210px] relative rounded-[28px] shrink-0 w-full" data-name="AI">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
+    <div className="bg-white min-h-[210px] h-auto lg:h-[210px] relative rounded-[28px] shrink-0 w-full overflow-hidden" data-name="AI">
+      {/* Desktop view (lg) */}
+      <div className="hidden lg:block overflow-clip relative rounded-[inherit] size-full">
         <Frame278 />
         <LeadFormNotFilledModal />
       </div>
+
+      {/* Mobile view (< lg) */}
+      <MobileAi />
+
       <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[28px]" />
     </div>
   );
@@ -7328,8 +7421,8 @@ function Ai() {
 
 function Frame279() {
   return (
-    <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[24px] items-start justify-center left-[24px] not-italic top-[75px]">
-      <div className="font-['Inter:Bold',sans-serif] font-bold leading-[0] relative shrink-0 text-[#141414] text-[40px] w-[458px]">
+    <div className="[word-break:break-word] relative lg:absolute content-stretch flex flex-col gap-[16px] sm:gap-[24px] items-start justify-center lg:left-[24px] not-italic lg:top-[75px] w-full max-w-[458px]">
+      <div className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] relative shrink-0 text-[#141414] text-[33px] sm:text-[40px] w-full max-w-[458px]">
         <p className="leading-[normal] mb-0" dir="auto">
           Helps your team
         </p>
@@ -7337,7 +7430,7 @@ function Frame279() {
           works anywhere
         </p>
       </div>
-      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] min-w-full relative shrink-0 text-[#464646] text-[16px] w-[min-content]">Stay updated on leads, tasks, and deals with a mobile experience designed for busy sales teams.</p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.4] relative shrink-0 text-[#464646] text-[14px] sm:text-[16px] w-full">Stay updated on leads, tasks, and deals with a mobile experience designed for busy sales teams.</p>
     </div>
   );
 }
@@ -7368,10 +7461,10 @@ function Frame280() {
 
 function Frame305() {
   return (
-    <div className="absolute h-[307px] left-[650px] top-px w-[549px]">
-      <div className="absolute flex h-[799px] items-center justify-center left-[-89px] top-[-168px] w-[812.497px]">
+    <div className="relative lg:absolute h-[240px] sm:h-[307px] lg:left-[650px] lg:top-px w-full lg:w-[549px] overflow-hidden lg:overflow-visible flex items-center justify-center shrink-0 mt-4 lg:mt-0">
+      <div className="absolute flex h-[500px] sm:h-[799px] items-center justify-center left-1/2 lg:left-[-89px] -translate-x-1/2 lg:translate-x-0 top-1/2 lg:top-[-168px] -translate-y-1/2 lg:translate-y-0 w-[500px] sm:w-[812.497px] pointer-events-none">
         <div className="flex-none rotate-[-42.08deg]">
-          <div className="h-[476.765px] relative w-[664.215px]">
+          <div className="h-[300px] sm:h-[476.765px] relative w-[400px] sm:w-[664.215px]">
             <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 664.215 476.765">
               <ellipse cx="332.107" cy="238.383" fill="var(--fill-0, #00236F)" id="Ellipse 5" rx="332.107" ry="238.383" />
             </svg>
@@ -7385,19 +7478,19 @@ function Frame305() {
 
 function Frame281() {
   return (
-    <div className="absolute bg-[rgba(230,233,241,0.35)] content-stretch flex items-center justify-center left-[24px] p-[8px] rounded-[99px] top-[24px]">
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#141414] text-[16px] whitespace-nowrap">Mobile Application</p>
+    <div className="relative lg:absolute bg-[rgba(230,233,241,0.35)] content-stretch flex items-center justify-center lg:left-[24px] p-[8px] px-[12px] rounded-[99px] lg:top-[24px] shrink-0 self-start mb-3 lg:mb-0">
+      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#141414] text-[14px] sm:text-[16px] whitespace-nowrap">Mobile Application</p>
     </div>
   );
 }
 
 function MobileApp() {
   return (
-    <div className="bg-white h-[309px] relative rounded-[28px] shrink-0 w-full" data-name="mobile app">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
+    <div className="bg-white min-h-[309px] h-auto lg:h-[309px] relative rounded-[28px] shrink-0 w-full p-4 sm:p-6 lg:p-0" data-name="mobile app">
+      <div className="overflow-clip relative rounded-[inherit] size-full flex flex-col lg:block">
+        <Frame281 />
         <Frame279 />
         <Frame305 />
-        <Frame281 />
       </div>
       <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[28px]" />
     </div>
@@ -7406,7 +7499,7 @@ function MobileApp() {
 
 export default function FeaturesSection() {
   return (
-    <div className="content-stretch flex flex-col gap-[64px] items-start relative shrink-0 w-[1200px]" data-name="features section">
+    <div className="content-stretch flex flex-col gap-[32px] sm:gap-[64px] items-start relative shrink-0 w-full max-w-[1200px] overflow-hidden" data-name="features section">
       <Frame263 />
       <Ai />
       <MobileApp />

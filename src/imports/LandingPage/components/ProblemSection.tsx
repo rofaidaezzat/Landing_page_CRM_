@@ -71,7 +71,7 @@ function Frame257() {
 
 function Frame269() {
   return (
-    <div className="content-stretch flex gap-[24px] items-center relative shrink-0 w-[1136px]">
+    <div className="content-stretch flex flex-col lg:flex-row gap-[24px] items-stretch relative shrink-0 w-full">
       <Frame256 />
       <Frame257 />
       <Frame260 />
@@ -81,8 +81,8 @@ function Frame269() {
 
 function Frame306() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-start relative shrink-0 w-full">
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[40px] whitespace-nowrap">Lost Visibility = Lost Revenue</p>
+    <div className="content-stretch flex flex-col gap-[24px] sm:gap-[40px] items-start relative shrink-0 w-full">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[28px] sm:text-[36px] lg:text-[40px] text-center lg:text-left w-full">Lost Visibility = Lost Revenue</p>
       <Frame269 />
     </div>
   );
@@ -100,7 +100,7 @@ function Frame251() {
           </div>
         </div>
       </div>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[23px]">{`44% of salespeople give up after 1 follow-up `}</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[16px] sm:text-[20px] lg:text-[23px]">{`44% of salespeople give up after 1 follow-up `}</p>
     </div>
   );
 }
@@ -117,7 +117,7 @@ function Frame252() {
           </div>
         </div>
       </div>
-      <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#141414] text-[23px] whitespace-nowrap">Sales teams spend only 34% of their time selling</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#141414] text-[16px] sm:text-[20px] lg:text-[23px]">Sales teams spend only 34% of their time selling</p>
     </div>
   );
 }
@@ -134,14 +134,14 @@ function Frame253() {
           </div>
         </div>
       </div>
-      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[23px]">Only 2% of sales happen at the first meeting</p>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-px not-italic relative text-[#141414] text-[16px] sm:text-[20px] lg:text-[23px]">Only 2% of sales happen at the first meeting</p>
     </div>
   );
 }
 
 function Frame249() {
   return (
-    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start justify-center min-w-px relative">
+    <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-start justify-center min-w-px relative w-full">
       <Frame251 />
       <Frame252 />
       <Frame253 />
@@ -151,7 +151,7 @@ function Frame249() {
 
 function Frame250() {
   return (
-    <div className="bg-white content-stretch flex items-center p-[24px] relative rounded-[12px] shrink-0 w-[604px]">
+    <div className="bg-white content-stretch flex items-center p-[16px] sm:p-[24px] relative rounded-[12px] shrink-0 w-full max-w-[604px]">
       <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[12px]" />
       <Frame249 />
     </div>
@@ -160,8 +160,8 @@ function Frame250() {
 
 function Frame307() {
   return (
-    <div className="content-stretch flex flex-col gap-[40px] items-center justify-center relative shrink-0">
-      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] min-w-full not-italic relative shrink-0 text-[#141414] text-[40px] text-center w-[min-content]">What researches says</p>
+    <div className="content-stretch flex flex-col gap-[24px] sm:gap-[40px] items-center justify-center relative shrink-0 w-full">
+      <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] min-w-full not-italic relative shrink-0 text-[#141414] text-[28px] sm:text-[36px] lg:text-[40px] text-center w-full">What researches says</p>
       <Frame250 />
     </div>
   );
@@ -169,11 +169,11 @@ function Frame307() {
 
 export default function ProblemSection() {
   return (
-    <div className="bg-white relative rounded-[28px] shrink-0 w-[1200px]" data-name="problem section">
-      <div className="content-stretch flex flex-col gap-[56px] items-center justify-center overflow-clip p-[32px] relative rounded-[inherit] size-full">
-        <div className="-translate-x-1/2 absolute bottom-[-94px] h-[369px] left-1/2 w-[690px]">
-          <div className="absolute inset-[-81.3%_-43.48%]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1290 969">
+    <div className="bg-white relative rounded-[28px] shrink-0 w-full max-w-[1200px]" data-name="problem section">
+      <div className="content-stretch flex flex-col gap-[40px] sm:gap-[56px] items-center justify-center overflow-clip p-[16px] sm:p-[32px] relative rounded-[inherit] size-full">
+        <div className="-translate-x-1/2 absolute bottom-[-94px] h-[369px] left-1/2 w-[690px] pointer-events-none hidden lg:block">
+          <div className="absolute inset-[-81.3%_-43.48%] pointer-events-none">
+            <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 1290 969">
               <g filter="url(#filter0_f_1_4134)" id="Ellipse 2">
                 <ellipse cx="645" cy="484.5" fill="var(--fill-0, #8A9ABD)" rx="345" ry="184.5" />
               </g>
