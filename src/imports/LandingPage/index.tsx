@@ -29,9 +29,9 @@ export default function LandingPage() {
       <Navbar />
       <Frame296 />
       <Footer />
-      <div className="absolute left-[calc(58.33%-21px)] size-[189px] top-[3955px]">
-        <div className="absolute inset-[-158.73%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
+      <div className="absolute left-[calc(58.33%-21px)] size-[189px] top-[3955px] pointer-events-none">
+        <div className="absolute inset-[-158.73%] pointer-events-none">
+          <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
             <g filter="url(#filter0_f_1_3940)" id="Ellipse 2">
               <circle cx="394.5" cy="394.5" fill="var(--fill-0, #8A9ABD)" r="94.5" />
             </g>
@@ -45,9 +45,9 @@ export default function LandingPage() {
           </svg>
         </div>
       </div>
-      <div className="absolute left-[calc(8.33%+123px)] size-[189px] top-[4619px]">
-        <div className="absolute inset-[-158.73%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
+      <div className="absolute left-[calc(8.33%+123px)] size-[189px] top-[4619px] pointer-events-none">
+        <div className="absolute inset-[-158.73%] pointer-events-none">
+          <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
             <g filter="url(#filter0_f_1_3940)" id="Ellipse 2">
               <circle cx="394.5" cy="394.5" fill="var(--fill-0, #8A9ABD)" r="94.5" />
             </g>
@@ -61,9 +61,9 @@ export default function LandingPage() {
           </svg>
         </div>
       </div>
-      <div className="absolute left-[96px] size-[189px] top-[699px]">
-        <div className="absolute inset-[-158.73%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
+      <div className="absolute left-[96px] size-[189px] top-[699px] pointer-events-none">
+        <div className="absolute inset-[-158.73%] pointer-events-none">
+          <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 789 789">
             <g filter="url(#filter0_f_1_3940)" id="Ellipse 2">
               <circle cx="394.5" cy="394.5" fill="var(--fill-0, #8A9ABD)" r="94.5" />
             </g>
