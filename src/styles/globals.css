@@ -1,0 +1,15 @@
+/* Sector image fade-in animation */
+@keyframes sectorFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sector-image-fade {
+  animation: sectorFadeIn 0.35s ease-out both;
+}
