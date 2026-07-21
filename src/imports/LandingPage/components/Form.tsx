@@ -1,3 +1,4 @@
+import { useState } from "react";
 import svgPaths from "../svg-mb1h8xnyqh";
 
 function Frame294() {
@@ -169,157 +170,112 @@ function Frame282() {
   );
 }
 
-function Frame41() {
-  return (
-    <div className="h-[48px] relative rounded-[8px] shrink-0 w-full">
-      <div className="flex flex-row items-center justify-end overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex gap-[8px] items-center justify-end p-[12px] relative size-full" />
-      </div>
-      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-    </div>
-  );
-}
+function Frame73() {
+  const [fullName, setFullName] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [description, setDescription] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
-function Frame340() {
-  return (
-    <div className="content-stretch flex items-start relative shrink-0 w-full">
-      <div className="content-stretch flex flex-[1_0_0] flex-col gap-[8px] items-start min-w-px relative" data-name="inputs">
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[#141414] text-[0px] w-[min-content]" dir="auto">
-          <span className="leading-[normal] text-[16px]">Full Name</span>
-          <span className="leading-[normal] text-[#00236f] text-[16px]">*</span>
-        </p>
-        <Frame41 />
-      </div>
-    </div>
-  );
-}
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFullName("");
+      setCompanyName("");
+      setPhone("");
+      setDescription("");
+    }, 4000);
+  };
 
-function Frame42() {
   return (
-    <div className="h-[48px] relative rounded-[8px] shrink-0 w-full">
-      <div className="flex flex-row items-center justify-end overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex gap-[8px] items-center justify-end p-[12px] relative size-full" />
-      </div>
-      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-    </div>
-  );
-}
+    <form
+      onSubmit={handleSubmit}
+      className="content-stretch flex flex-col gap-[20px] items-end justify-center p-[24px] relative rounded-[12px] shrink-0 w-[507px] border border-[#d4d5d8] bg-white z-20"
+    >
+      <div className="content-stretch flex flex-col gap-[14px] items-start relative shrink-0 w-full">
+        {/* Full Name */}
+        <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full">
+          <label className="font-['Inter:Regular',sans-serif] font-normal text-[15px] text-[#141414]">
+            Full Name <span className="text-[#00236f]">*</span>
+          </label>
+          <input
+            type="text"
+            required
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            placeholder="Enter your full name"
+            className="w-full h-[44px] px-[14px] rounded-[8px] border border-[#d4d5d8] focus:border-[#00236f] focus:ring-1 focus:ring-[#00236f] focus:outline-none font-['Inter:Regular',sans-serif] text-[14px] text-[#141414] placeholder-[#a0a0a0] transition-colors"
+          />
+        </div>
 
-function Frame75() {
-  return (
-    <div className="content-stretch flex gap-[8px] items-center relative shrink-0">
-      <p className="[word-break:break-word] font-['Poppins:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#464646] text-[13px] whitespace-nowrap">Eg</p>
-      <p className="[word-break:break-word] font-['Poppins:Regular',sans-serif] leading-[normal] not-italic relative shrink-0 text-[#464646] text-[13px] whitespace-nowrap">+20</p>
-      <div className="relative shrink-0 size-[20px]" data-name="chevron-down">
-        <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[4.58px] left-1/2 top-[calc(50%+0.29px)] w-[10px]" data-name="Vector">
-          <div className="absolute inset-[-21.83%_-10%]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12 6.58001">
-              <path d={svgPaths.p275eec80} id="Vector" stroke="var(--stroke-0, #464646)" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-            </svg>
+        {/* Company Name */}
+        <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full">
+          <label className="font-['Inter:Regular',sans-serif] font-normal text-[15px] text-[#141414]">
+            Company Name <span className="text-[#00236f]">*</span>
+          </label>
+          <input
+            type="text"
+            required
+            value={companyName}
+            onChange={(e) => setCompanyName(e.target.value)}
+            placeholder="Enter your company name"
+            className="w-full h-[44px] px-[14px] rounded-[8px] border border-[#d4d5d8] focus:border-[#00236f] focus:ring-1 focus:ring-[#00236f] focus:outline-none font-['Inter:Regular',sans-serif] text-[14px] text-[#141414] placeholder-[#a0a0a0] transition-colors"
+          />
+        </div>
+
+        {/* Phone Number */}
+        <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full">
+          <label className="font-['Poppins:Regular',sans-serif] font-normal text-[15px] text-[#141414]">
+            Phone Number <span className="text-[#00236f]">*</span>
+          </label>
+          <div className="flex gap-[8px] items-center w-full h-[44px]">
+            <div className="h-full flex items-center justify-center px-[12px] rounded-[8px] border border-[#d4d5d8] bg-[#f8f9fc] shrink-0 text-[#464646] font-['Poppins:Regular',sans-serif] text-[13px] gap-[6px]">
+              <span>Eg</span>
+              <span>+20</span>
+            </div>
+            <input
+              type="tel"
+              required
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="111 111 1111"
+              className="flex-1 h-full px-[14px] rounded-[8px] border border-[#d4d5d8] focus:border-[#00236f] focus:ring-1 focus:ring-[#00236f] focus:outline-none font-['Inter:Regular',sans-serif] text-[14px] text-[#141414] placeholder-[#a0a0a0] transition-colors"
+            />
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
 
-function Frame43() {
-  return (
-    <div className="h-full relative rounded-[8px] shrink-0 w-[108px]">
-      <div className="flex flex-row items-center justify-center overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex gap-[8px] items-center justify-center p-[12px] relative size-full">
-          <Frame75 />
+        {/* Description */}
+        <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full">
+          <label className="font-['Inter:Regular',sans-serif] font-normal text-[15px] text-[#141414]">
+            Description
+          </label>
+          <textarea
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder="Tell us about your business..."
+            rows={3}
+            className="w-full p-[12px] rounded-[8px] border border-[#d4d5d8] focus:border-[#00236f] focus:ring-1 focus:ring-[#00236f] focus:outline-none font-['Inter:Regular',sans-serif] text-[14px] text-[#141414] placeholder-[#747474] resize-none transition-colors"
+          />
         </div>
       </div>
-      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-    </div>
-  );
-}
 
-function Frame44() {
-  return (
-    <div className="flex-[1_0_0] h-full min-w-px relative rounded-[8px]">
-      <div className="overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex gap-[8px] items-start p-[12px] relative size-full" />
-      </div>
-      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-    </div>
-  );
-}
-
-function Frame74() {
-  return (
-    <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-start min-h-px relative w-[468px]">
-      <Frame43 />
-      <Frame44 />
-    </div>
-  );
-}
-
-function Inputs() {
-  return (
-    <div className="content-stretch flex flex-col gap-[8px] h-[80px] items-start relative shrink-0 w-full" data-name="inputs">
-      <p className="[word-break:break-word] font-['Poppins:Regular',sans-serif] leading-[0] min-w-full not-italic relative shrink-0 text-[#141414] text-[16px] w-[min-content]" dir="auto">
-        <span className="leading-[normal]">Phone Number</span>
-        <span className="leading-[normal] text-[#00236f]">*</span>
-      </p>
-      <Frame74 />
-    </div>
-  );
-}
-
-function Frame45() {
-  return (
-    <div className="flex-[1_0_0] min-h-px relative rounded-[8px] w-full">
-      <div className="flex flex-row items-center justify-end overflow-clip rounded-[inherit] size-full">
-        <div className="content-stretch flex gap-[8px] items-center justify-end p-[12px] relative size-full">
-          <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal h-full leading-[1.4] min-w-px not-italic relative text-[#747474] text-[13px]" dir="auto">
-            Tell us about your business...
-          </p>
-        </div>
-      </div>
-      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[8px]" />
-    </div>
-  );
-}
-
-function Frame72() {
-  return (
-    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full">
-      <Frame340 />
-      <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-name="inputs">
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[#141414] text-[0px] w-[min-content]" dir="auto">
-          <span className="leading-[normal] text-[16px]">Company Name</span>
-          <span className="leading-[normal] text-[#00236f] text-[16px]">*</span>
-        </p>
-        <Frame42 />
-      </div>
-      <Inputs />
-      <div className="content-stretch flex flex-col gap-[8px] h-[112px] items-start relative shrink-0 w-full" data-name="inputs">
-        <p className="[word-break:break-word] font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative shrink-0 text-[#141414] text-[16px] w-full" dir="auto">
-          Description
-        </p>
-        <Frame45 />
-      </div>
-    </div>
-  );
-}
-
-function Frame73() {
-  return (
-    <div className="content-stretch flex flex-col gap-[32px] items-end justify-center p-[16px] relative rounded-[12px] shrink-0 w-[507px]">
-      <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[12px]" />
-      <Frame72 />
-      <div className="bg-[#00236f] content-stretch drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] flex h-[48px] items-center justify-center px-[24px] py-[8px] relative rounded-[12px] shrink-0" data-name="btns">
-        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#f5f6fa] text-[16px] text-center whitespace-nowrap">Book A Free Meeting</p>
-      </div>
-    </div>
+      <button
+        type="submit"
+        className={`w-full h-[48px] rounded-[12px] flex items-center justify-center text-[#f5f6fa] font-['Inter:Medium',sans-serif] font-medium text-[16px] cursor-pointer drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] transition-all duration-200 ${
+          submitted ? "bg-[#357724]" : "bg-[#00236f] hover:bg-[#001c59] active:scale-98"
+        }`}
+      >
+        {submitted ? "✓ Meeting Request Sent!" : "Book A Free Meeting"}
+      </button>
+    </form>
   );
 }
 
 export default function Form() {
   return (
-    <div className="bg-white relative rounded-[28px] shrink-0 w-[1200px]" data-name="form">
+    <div id="get-started" className="bg-white relative rounded-[28px] shrink-0 w-[1200px] scroll-mt-6" data-name="form">
       <div className="content-stretch flex items-start justify-between overflow-clip p-[32px] relative rounded-[inherit] size-full">
         <Frame282 />
         <Frame73 />

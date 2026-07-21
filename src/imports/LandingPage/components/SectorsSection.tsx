@@ -9,10 +9,10 @@ import imgFrame1321318804 from "../ece298d0ec2c16f10310d45724b276a6035cb503.png"
 
 function RealEstate() {
   return (
-    <div className="h-[343px] relative shrink-0 w-[458px] sector-image-fade" data-name="real estate">
-      <div className="-translate-y-1/2 absolute aspect-[1089/816] left-0 right-0 top-[calc(50%+0.5px)]" data-name="ChatGPT Image Jun 7, 2026, 11_59_19 AM 1">
+    <div className="h-[343px] relative shrink-0 w-[458px] sector-image-fade pointer-events-none" data-name="real estate">
+      <div className="-translate-y-1/2 absolute aspect-[1089/816] left-0 right-0 top-[calc(50%+0.5px)] pointer-events-none" data-name="ChatGPT Image Jun 7, 2026, 11_59_19 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="Real Estate" className="absolute h-[125.49%] left-[-20.75%] max-w-none top-[-18.63%] w-[141.05%]" src={imgChatGptImageJun72026115919Am1} />
+          <img alt="Real Estate" className="absolute h-[125.49%] left-[-20.75%] max-w-none top-[-18.63%] w-[141.05%] pointer-events-none" src={imgChatGptImageJun72026115919Am1} />
         </div>
       </div>
     </div>
@@ -21,10 +21,10 @@ function RealEstate() {
 
 function Distributors() {
   return (
-    <div className="h-[343px] relative shrink-0 w-[483px] sector-image-fade" data-name="distributors">
-      <div className="-translate-y-1/2 absolute aspect-[1215/818] left-[4.65%] right-[4.65%] top-[calc(50%+0.5px)]" data-name="ChatGPT Image Jun 7, 2026, 11_50_41 AM 1">
+    <div className="h-[343px] relative shrink-0 w-[483px] sector-image-fade pointer-events-none" data-name="distributors">
+      <div className="-translate-y-1/2 absolute aspect-[1215/818] left-[4.65%] right-[4.65%] top-[calc(50%+0.5px)] pointer-events-none" data-name="ChatGPT Image Jun 7, 2026, 11_50_41 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="Distributors" className="absolute inset-0 size-full object-contain" src={svgDistributors} />
+          <img alt="Distributors" className="absolute inset-0 size-full object-contain pointer-events-none" src={svgDistributors} />
         </div>
       </div>
     </div>
@@ -33,10 +33,10 @@ function Distributors() {
 
 function Education() {
   return (
-    <div className="h-[343px] relative shrink-0 w-[418px] sector-image-fade" data-name="education">
-      <div className="-translate-y-1/2 absolute aspect-[1240/689] left-0 right-0 top-1/2" data-name="ChatGPT Image Jun 7, 2026, 11_44_51 AM 1">
+    <div className="h-[343px] relative shrink-0 w-[418px] sector-image-fade pointer-events-none" data-name="education">
+      <div className="-translate-y-1/2 absolute aspect-[1240/689] left-0 right-0 top-1/2 pointer-events-none" data-name="ChatGPT Image Jun 7, 2026, 11_44_51 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="Education" className="absolute inset-0 size-full object-contain" src={svgEducation} />
+          <img alt="Education" className="absolute inset-0 size-full object-contain pointer-events-none" src={svgEducation} />
         </div>
       </div>
     </div>
@@ -45,10 +45,10 @@ function Education() {
 
 function Agencies() {
   return (
-    <div className="h-[343px] relative shrink-0 w-[438px] sector-image-fade" data-name="agencies">
-      <div className="-translate-x-1/2 absolute aspect-[1038/895] bottom-0 left-1/2 top-0" data-name="ChatGPT Image Jun 7, 2026, 11_41_54 AM 1">
+    <div className="h-[343px] relative shrink-0 w-[438px] sector-image-fade pointer-events-none" data-name="agencies">
+      <div className="-translate-x-1/2 absolute aspect-[1038/895] bottom-0 left-1/2 top-0 pointer-events-none" data-name="ChatGPT Image Jun 7, 2026, 11_41_54 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="Agencies" className="absolute inset-0 size-full object-contain" src={svgAgencies} />
+          <img alt="Agencies" className="absolute inset-0 size-full object-contain pointer-events-none" src={svgAgencies} />
         </div>
       </div>
     </div>
@@ -57,10 +57,10 @@ function Agencies() {
 
 function GrowingBusinesses() {
   return (
-    <div className="h-[343px] relative shrink-0 w-[481px] sector-image-fade" data-name="growing businesses">
-      <div className="-translate-y-1/2 absolute aspect-[1085/807] left-0 right-0 top-1/2" data-name="ChatGPT Image Jun 7, 2026, 11_55_35 AM 1">
+    <div className="h-[343px] relative shrink-0 w-[481px] sector-image-fade pointer-events-none" data-name="growing businesses">
+      <div className="-translate-y-1/2 absolute aspect-[1085/807] left-0 right-0 top-1/2 pointer-events-none" data-name="ChatGPT Image Jun 7, 2026, 11_55_35 AM 1">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <img alt="Growing Businesses" className="absolute inset-0 size-full object-contain" src={svgGrowing} />
+          <img alt="Growing Businesses" className="absolute inset-0 size-full object-contain pointer-events-none" src={svgGrowing} />
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@ function BuiltForImages({ activeIndex }: { activeIndex: number }) {
   return (
     <div
       key={activeIndex}
-      className="-translate-x-1/2 absolute content-stretch flex flex-col items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px] sector-image-fade"
+      className="-translate-x-1/2 absolute content-stretch flex flex-col items-center justify-center left-[calc(50%+31px)] top-[76px] w-[581px] sector-image-fade pointer-events-none"
       data-name="built for images"
     >
       {activeIndex === 0 && <RealEstate />}
@@ -86,10 +86,10 @@ function BuiltForImages({ activeIndex }: { activeIndex: number }) {
 export function Frame292({ activeIndex }: { activeIndex: number }) {
   return (
     <div className="absolute h-[475px] left-[496px] top-[96px] w-[703px] pointer-events-none">
-      <div className="absolute flex items-center justify-center left-[-151px] size-[1016.288px] top-[-152px]">
-        <div className="flex-none rotate-45">
-          <div className="h-[773.033px] relative w-[664.215px]">
-            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 664.215 773.033">
+      <div className="absolute flex items-center justify-center left-[-151px] size-[1016.288px] top-[-152px] pointer-events-none">
+        <div className="flex-none rotate-45 pointer-events-none">
+          <div className="h-[773.033px] relative w-[664.215px] pointer-events-none">
+            <svg className="absolute block inset-0 size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 664.215 773.033">
               <ellipse cx="332.107" cy="386.517" fill="var(--fill-0, #00236F)" id="Ellipse 5" rx="332.107" ry="386.517" />
             </svg>
           </div>
@@ -115,7 +115,7 @@ export function Frame285({ activeIndex, setActiveIndex }: Frame285Props) {
   ];
 
   return (
-    <div className="absolute content-stretch flex flex-col items-start left-[24px] rounded-[12px] top-[96px] w-[253px] bg-white overflow-hidden z-30 border border-[#d4d5d8]">
+    <div className="absolute content-stretch flex flex-col items-start left-[24px] rounded-[12px] top-[96px] w-[253px] bg-white overflow-hidden z-30 border border-[#d4d5d8] shadow-sm">
       {tabs.map((tab, idx) => {
         const isActive = activeIndex === tab.id;
 
@@ -184,10 +184,10 @@ export default function SectorsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="bg-white h-[572px] relative rounded-[28px] shrink-0 w-[1200px]" data-name="built for">
+    <div id="sectors-section" className="bg-white h-[572px] relative rounded-[28px] shrink-0 w-[1200px] z-10" data-name="built for">
       <div className="overflow-clip relative rounded-[inherit] size-full">
         <Frame292 activeIndex={activeIndex} />
-        <p className="[word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[normal] left-[24px] not-italic text-[#141414] text-[40px] top-[24px] w-[458px]" dir="auto">
+        <p className="[word-break:break-word] absolute font-['Inter:Bold',sans-serif] font-bold leading-[normal] left-[24px] not-italic text-[#141414] text-[40px] top-[24px] w-[458px] pointer-events-none" dir="auto">
           For different sectors
         </p>
         <Frame285 activeIndex={activeIndex} setActiveIndex={setActiveIndex} />

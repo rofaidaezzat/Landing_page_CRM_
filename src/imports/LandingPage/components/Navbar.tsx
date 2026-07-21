@@ -26,13 +26,27 @@ function Frame1() {
 }
 
 export default function Navbar() {
+  const scrollToGetStarted = () => {
+    const el = document.getElementById("get-started");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="bg-[#f5f6fa] content-stretch flex items-center justify-between overflow-clip px-[24px] py-[16px] relative rounded-[12px] shrink-0 w-[1248px]">
       <Frame1 />
-      <div className="content-stretch flex gap-[8px] h-[48px] items-center justify-center px-[24px] py-[8px] relative rounded-[12px] shrink-0" data-name="btns">
+      <button
+        type="button"
+        onClick={scrollToGetStarted}
+        className="content-stretch flex gap-[8px] h-[48px] items-center justify-center px-[24px] py-[8px] relative rounded-[12px] shrink-0 cursor-pointer bg-transparent hover:bg-[#00236f]/5 active:scale-95 transition-all duration-200"
+        data-name="btns"
+      >
         <div aria-hidden className="absolute border border-[#00236f] border-solid inset-0 pointer-events-none rounded-[12px]" />
-        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#00236f] text-[16px] text-center whitespace-nowrap">Book A Free Meeting</p>
-      </div>
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#00236f] text-[16px] text-center whitespace-nowrap">
+          Book A Free Meeting
+        </p>
+      </button>
     </div>
   );
 }

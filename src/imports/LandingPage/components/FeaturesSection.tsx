@@ -6922,12 +6922,26 @@ function Frame277() {
 }
 
 function Frame297() {
+  const scrollToGetStarted = () => {
+    const el = document.getElementById("get-started");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="-translate-y-1/2 absolute content-stretch flex flex-col gap-[40px] items-start left-[579px] top-1/2 w-[537px]">
       <Frame277 />
-      <div className="bg-[#00236f] content-stretch drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] flex h-[48px] items-center justify-center px-[24px] py-[8px] relative rounded-[12px] shrink-0" data-name="btns">
-        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#f5f6fa] text-[16px] text-center whitespace-nowrap">Get Started</p>
-      </div>
+      <button
+        type="button"
+        onClick={scrollToGetStarted}
+        className="bg-[#00236f] hover:bg-[#001c59] active:scale-95 transition-all duration-200 cursor-pointer content-stretch drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] flex h-[48px] items-center justify-center px-[24px] py-[8px] relative rounded-[12px] shrink-0"
+        data-name="btns"
+      >
+        <p className="[word-break:break-word] font-['Inter:Medium',sans-serif] font-medium leading-[normal] not-italic relative shrink-0 text-[#f5f6fa] text-[16px] text-center whitespace-nowrap">
+          Get Started
+        </p>
+      </button>
     </div>
   );
 }
