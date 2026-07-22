@@ -1350,220 +1350,243 @@ function Frame103() {
 
 function Frame248() {
   return (
-    <div className="h-[689px] relative shrink-0 w-full">
-      <div className="absolute left-[1061px] size-[239px] top-[48px]">
-        <div className="absolute inset-[-125.52%]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 839 839">
-            <g filter="url(#filter0_f_1_4030)" id="Ellipse 1">
-              <circle cx="419.5" cy="419.5" fill="var(--fill-0, #8A9ABD)" r="119.5" />
-            </g>
-            <defs>
-              <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="839" id="filter0_f_1_4030" width="839" x="0" y="0">
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-                <feGaussianBlur result="effect1_foregroundBlur_1_4030" stdDeviation="150" />
-              </filter>
-            </defs>
-          </svg>
+    <div className="w-full relative shrink-0">
+      {/* Desktop view (lg) - UNTOUCHED WEB SCREEN */}
+      <div className="hidden lg:block h-[689px] relative shrink-0 w-full">
+        <div className="absolute left-[1061px] size-[239px] top-[48px]">
+          <div className="absolute inset-[-125.52%]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 839 839">
+              <g filter="url(#filter0_f_1_4030)" id="Ellipse 1">
+                <circle cx="419.5" cy="419.5" fill="var(--fill-0, #8A9ABD)" r="119.5" />
+              </g>
+              <defs>
+                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="839" id="filter0_f_1_4030" width="839" x="0" y="0">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
+                  <feGaussianBlur result="effect1_foregroundBlur_1_4030" stdDeviation="150" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
         </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[58px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3228880cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 1" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
+        <div className="absolute bottom-0 flex items-center justify-center left-[58px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3228880cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 1" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[171px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[283px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[395px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[508px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[620px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[732px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[844px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[957px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[1069px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 flex items-center justify-center left-[1181px] top-0 w-0" style={{ containerType: "size" }}>
+          <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
+            <div className="relative size-full">
+              <div className="absolute inset-[-1px_0_0_0]">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
+                  <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[48px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[122px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[196px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[270px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[344px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[418px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[492px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[566px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="absolute h-0 left-0 top-[640px] w-[1248px]">
+          <div className="absolute inset-[-1px_0_0_0]">
+            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
+              <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div className="-translate-x-1/2 absolute bg-white h-[619px] left-[calc(50%+0.5px)] overflow-clip rounded-[24px] shadow-[2px_1px_8.8px_7px_rgba(0,35,111,0.11)] top-[30px] w-[943px]" data-name="Desktop / Chrome / Light">
+          <div className="absolute inset-[79px_0_0_0]" data-name="Body">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBody} />
+          </div>
+          <CoreGoogleChromeToolbarLight />
+          <div className="absolute flex h-[319.958px] items-center justify-center left-[53px] top-[319px] w-[469.367px]">
+            <div className="flex-none rotate-[-8.92deg]">
+              <Frame102 />
+            </div>
+          </div>
+          <div className="absolute flex h-[277.078px] items-center justify-center left-[572px] top-[163px] w-[417.813px]">
+            <div className="flex-none rotate-[2.73deg]">
+              <Frame103 />
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[171px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
+
+      {/* Mobile view (< lg) - RESPONSIVE MOBILE HERO IMAGE (Height: 224.704px, Width: card width) */}
+      <div className="block lg:hidden w-full h-[224.704px] relative rounded-[24px] overflow-hidden bg-white shadow-[2px_1px_8.8px_7px_rgba(0,35,111,0.11)] border border-[#d4d5d8] flex items-center justify-center" style={{ height: "224.704px" }}>
+        <div className="scale-[0.38] sm:scale-[0.5] origin-center relative w-[943px] h-[619px] shrink-0 pointer-events-none">
+          <div className="absolute inset-[79px_0_0_0]" data-name="Body">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBody} />
+          </div>
+          <CoreGoogleChromeToolbarLight />
+          <div className="absolute flex h-[319.958px] items-center justify-center left-[53px] top-[319px] w-[469.367px]">
+            <div className="flex-none rotate-[-8.92deg]">
+              <Frame102 />
             </div>
           </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[283px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
+          <div className="absolute flex h-[277.078px] items-center justify-center left-[572px] top-[163px] w-[417.813px]">
+            <div className="flex-none rotate-[2.73deg]">
+              <Frame103 />
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[395px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[508px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[620px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[732px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[844px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[957px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[1069px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute bottom-0 flex items-center justify-center left-[1181px] top-0 w-0" style={{ containerType: "size" }}>
-        <div className="flex-none h-[3192660cqw] rotate-90 w-[100cqh]">
-          <div className="relative size-full">
-            <div className="absolute inset-[-1px_0_0_0]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 689 1">
-                <line id="Line 9" stroke="var(--stroke-0, #D4D5D8)" x2="689" y1="0.5" y2="0.5" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[48px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[122px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[196px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[270px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[344px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[418px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[492px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[566px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="absolute h-0 left-0 top-[640px] w-[1248px]">
-        <div className="absolute inset-[-1px_0_0_0]">
-          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1248 1">
-            <line id="Line 22" stroke="var(--stroke-0, #D4D5D8)" x2="1248" y1="0.5" y2="0.5" />
-          </svg>
-        </div>
-      </div>
-      <div className="-translate-x-1/2 absolute bg-white h-[619px] left-[calc(50%+0.5px)] overflow-clip rounded-[24px] shadow-[2px_1px_8.8px_7px_rgba(0,35,111,0.11)] top-[30px] w-[943px]" data-name="Desktop / Chrome / Light">
-        <div className="absolute inset-[79px_0_0_0]" data-name="Body">
-          <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgBody} />
-        </div>
-        <CoreGoogleChromeToolbarLight />
-        <div className="absolute flex h-[319.958px] items-center justify-center left-[53px] top-[319px] w-[469.367px]">
-          <div className="flex-none rotate-[-8.92deg]">
-            <Frame102 />
-          </div>
-        </div>
-        <div className="absolute flex h-[277.078px] items-center justify-center left-[572px] top-[163px] w-[417.813px]">
-          <div className="flex-none rotate-[2.73deg]">
-            <Frame103 />
           </div>
         </div>
       </div>

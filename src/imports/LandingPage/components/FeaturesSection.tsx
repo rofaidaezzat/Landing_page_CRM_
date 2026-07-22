@@ -7022,6 +7022,121 @@ function Frame310() {
   );
 }
 
+function MobileSalesPlatformCard() {
+  const scrollToGetStarted = () => {
+    const el = document.getElementById("get-started");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <div className="flex lg:hidden flex-col gap-5 w-full p-4 sm:p-6">
+      <p className="font-['Inter:Bold',sans-serif] font-bold text-[#141414] text-[22px] sm:text-[28px] text-center w-full leading-[1.25]">
+        Everything your sales team needs in one platform.
+      </p>
+
+      {/* Card 1: Keep every lead organized */}
+      <div className="bg-[#f5f6fa] rounded-[24px] p-4 sm:p-5 border border-[#d4d5d8] flex flex-col gap-3">
+        <div>
+          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[18px] sm:text-[20px] mb-1">
+            Keep every lead organized in one place
+          </p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal text-[#464646] text-[13px] sm:text-[14px] leading-[1.4]">
+            Capture, track, and update leads without spreadsheets or scattered notes. View contact details, inquiries, follow-up dates, and sales notes in a single workspace.
+          </p>
+        </div>
+
+        {/* Lead Table preview mockup graphic */}
+        <div className="relative w-full h-[200px] sm:h-[220px] overflow-hidden rounded-[16px] border border-[#d4d5d8] bg-white flex items-start justify-start p-2">
+          <div className="scale-[0.72] sm:scale-85 origin-top-left relative w-[500px] h-[260px] pointer-events-none">
+            <Frame302 />
+          </div>
+        </div>
+      </div>
+
+      {/* Card 2: Never miss a follow-up */}
+      <div className="bg-[#f5f6fa] rounded-[24px] p-4 sm:p-5 border border-[#d4d5d8] flex flex-col gap-3">
+        <div>
+          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[18px] sm:text-[20px] mb-1">
+            Never miss a follow-up again
+          </p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal text-[#464646] text-[13px] sm:text-[14px] leading-[1.4]">
+            Assign tasks, track deadlines, and view upcoming actions from anywhere in the platform.
+          </p>
+        </div>
+
+        {/* Task Card preview mockup graphic */}
+        <div className="relative w-full h-[170px] sm:h-[190px] overflow-hidden rounded-[16px] border border-[#d4d5d8] bg-white flex items-start justify-start p-2">
+          <div className="scale-[0.68] sm:scale-80 origin-top-left -left-12 -top-6 relative w-[540px] h-[220px] pointer-events-none">
+            <Frame300 />
+          </div>
+        </div>
+      </div>
+
+      {/* Card 3: Monitor every closed deal */}
+      <div className="bg-white rounded-[24px] p-4 sm:p-5 border border-[#d4d5d8] flex flex-col gap-3">
+        <div>
+          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[18px] sm:text-[20px] mb-1">
+            Monitor every closed deal
+          </p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal text-[#464646] text-[13px] sm:text-[14px] leading-[1.4]">
+            Track services, deal values, payment status, and customer history from a centralized sales record.
+          </p>
+        </div>
+
+        {/* Deal record preview mockup graphic */}
+        <div className="relative w-full h-[180px] sm:h-[200px] overflow-hidden rounded-[16px] border border-[#d4d5d8] bg-[#f5f6fa] flex items-start justify-start">
+          <div className="scale-[0.7] sm:scale-80 origin-top-left -left-3 -top-2 relative w-[500px] h-[240px] pointer-events-none">
+            <Frame301 />
+            <FluentCursorClick24Regular1 />
+          </div>
+        </div>
+      </div>
+
+      {/* Card 4: One Platform, Multiple Roles */}
+      <div className="bg-white rounded-[24px] p-4 sm:p-5 border border-[#d4d5d8] flex flex-col gap-3">
+        <div>
+          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[18px] sm:text-[20px] mb-1">
+            One Platform, Multiple Roles
+          </p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal text-[#464646] text-[13px] sm:text-[14px] leading-[1.4]">
+            Provide admins, Managers, and sales reps with role-specific experiences that keep everyone aligned.
+          </p>
+        </div>
+
+        {/* Roles & Overview preview mockup graphic */}
+        <div className="relative w-full h-[190px] sm:h-[210px] overflow-hidden rounded-[16px] border border-[#d4d5d8] bg-[#f5f6fa] flex items-start justify-start">
+          <div className="scale-[0.65] sm:scale-75 origin-top-left -left-2 -top-2 relative w-[550px] h-[260px] pointer-events-none">
+            <Frame303 />
+          </div>
+        </div>
+      </div>
+
+      {/* Card 5: See what drives results */}
+      <div className="bg-[#f5f6fa] rounded-[24px] p-4 sm:p-5 border border-[#d4d5d8] flex flex-col gap-3">
+        <div>
+          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#141414] text-[18px] sm:text-[20px] mb-1">
+            See what drives results
+          </p>
+          <p className="font-['Inter:Regular',sans-serif] font-normal text-[#464646] text-[13px] sm:text-[14px] leading-[1.4] mb-3">
+            Track lead activity, completed deals, follow-ups, and reporting metrics across your sales team.
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={scrollToGetStarted}
+          className="w-full bg-[#00236f] hover:bg-[#001c59] active:scale-95 transition-all duration-200 cursor-pointer drop-shadow-[0px_4px_2px_rgba(0,0,0,0.25)] flex h-[48px] items-center justify-center px-[24px] py-[8px] rounded-[12px]"
+        >
+          <p className="font-['Inter:Medium',sans-serif] font-medium text-[#f5f6fa] text-[16px] text-center whitespace-nowrap">
+            Get Started
+          </p>
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function Frame321() {
   return (
     <div className="relative lg:absolute content-stretch flex flex-col gap-[20px] sm:gap-[40px] items-center lg:left-[32px] lg:top-[32px] w-full lg:w-[1136px] px-2 sm:px-4 lg:px-0">
@@ -7033,8 +7148,9 @@ function Frame321() {
 
 function Frame263() {
   return (
-    <div className="bg-white h-[1510px] relative rounded-[28px] shrink-0 w-full">
-      <div className="overflow-clip relative rounded-[inherit] size-full">
+    <div className="bg-white min-h-[1510px] h-auto lg:h-[1510px] relative rounded-[28px] shrink-0 w-full overflow-hidden" data-name="sales platform card">
+      {/* Desktop view (lg) - UNTOUCHED ORIGINAL DESKTOP STYLES */}
+      <div className="hidden lg:block overflow-clip relative rounded-[inherit] size-full">
         <div className="-translate-x-1/2 absolute bottom-[-81px] h-[228px] left-[calc(50%-100px)] w-[638px]">
           <div className="absolute inset-[-131.58%_-47.02%]">
             <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1238 828">
@@ -7053,6 +7169,10 @@ function Frame263() {
         </div>
         <Frame321 />
       </div>
+
+      {/* Mobile view (< lg) - RESPONSIVE MOBILE STYLES */}
+      <MobileSalesPlatformCard />
+
       <div aria-hidden className="absolute border border-[#d4d5d8] border-solid inset-0 pointer-events-none rounded-[28px]" />
     </div>
   );

@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import svgPaths from "../svg-mb1h8xnyqh";
 import { Frame260 } from "./Hero";
 import imgFrame1321318760 from "../41e1685ed529b4cc9aae55299ffebacce3f05ee8.png";

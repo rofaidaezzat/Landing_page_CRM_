@@ -22,7 +22,6 @@ function PlusIcon() {
     </div>
   );
 }
-
 const faqList = [
   {
     id: 1,

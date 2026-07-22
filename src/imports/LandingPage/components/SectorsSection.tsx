@@ -54,7 +54,6 @@ function Agencies() {
     </div>
   );
 }
-
 function GrowingBusinesses() {
   return (
     <div className="h-[343px] relative shrink-0 w-[481px] sector-image-fade pointer-events-none" data-name="growing businesses">
@@ -66,7 +65,6 @@ function GrowingBusinesses() {
     </div>
   );
 }
-
 function BuiltForImages({ activeIndex }: { activeIndex: number }) {
   return (
     <div
@@ -124,9 +122,8 @@ export function Frame285({ activeIndex, setActiveIndex }: Frame285Props) {
             key={tab.id}
             type="button"
             onClick={() => setActiveIndex(tab.id)}
-            className={`w-full shrink-0 text-left transition-colors duration-200 px-[16px] py-[22px] cursor-pointer relative z-30 flex items-center ${
-              isActive ? "bg-[#e6e9f1] text-[#141414] font-medium" : "bg-white text-[#141414] hover:bg-[#f5f6fa]"
-            } ${idx < tabs.length - 1 ? "border-b border-[#d4d5d8]" : ""}`}
+            className={`w-full shrink-0 text-left transition-colors duration-200 px-[16px] py-[22px] cursor-pointer relative z-30 flex items-center ${isActive ? "bg-[#e6e9f1] text-[#141414] font-medium" : "bg-white text-[#141414] hover:bg-[#f5f6fa]"
+              } ${idx < tabs.length - 1 ? "border-b border-[#d4d5d8]" : ""}`}
           >
             <span className="[word-break:break-word] font-['Inter:Medium',sans-serif] text-[23px] leading-[normal] pointer-events-none">
               {tab.name}
@@ -198,11 +195,10 @@ function MobileFrame285({ activeIndex, setActiveIndex }: Frame285Props) {
             key={tab.id}
             type="button"
             onClick={() => setActiveIndex(tab.id)}
-            className={`px-4 py-2 rounded-full whitespace-nowrap text-[14px] sm:text-[16px] font-medium transition-all duration-200 shrink-0 cursor-pointer border ${
-              isActive
+            className={`px-4 py-2 rounded-full whitespace-nowrap text-[14px] sm:text-[16px] font-medium transition-all duration-200 shrink-0 cursor-pointer border ${isActive
                 ? "bg-[#00236f] text-white border-[#00236f] shadow-sm"
                 : "bg-white text-[#464646] border-[#d4d5d8] hover:bg-[#f5f6fa]"
-            }`}
+              }`}
           >
             {tab.name}
           </button>
