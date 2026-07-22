@@ -1353,22 +1353,7 @@ function Frame248() {
     <div className="w-full relative shrink-0">
       {/* Desktop view (lg) - UNTOUCHED WEB SCREEN */}
       <div className="hidden lg:block h-[689px] relative shrink-0 w-full">
-        <div className="absolute left-[1061px] size-[239px] top-[48px]">
-          <div className="absolute inset-[-125.52%]">
-            <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 839 839">
-              <g filter="url(#filter0_f_1_4030)" id="Ellipse 1">
-                <circle cx="419.5" cy="419.5" fill="var(--fill-0, #8A9ABD)" r="119.5" />
-              </g>
-              <defs>
-                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="839" id="filter0_f_1_4030" width="839" x="0" y="0">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-                  <feGaussianBlur result="effect1_foregroundBlur_1_4030" stdDeviation="150" />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
+
         <div className="absolute bottom-0 flex items-center justify-center left-[58px] top-0 w-0" style={{ containerType: "size" }}>
           <div className="flex-none h-[3228880cqw] rotate-90 w-[100cqh]">
             <div className="relative size-full">
@@ -1597,6 +1582,7 @@ function Frame248() {
 export default function Hero() {
   return (
     <div className="content-stretch flex flex-col gap-[56px] items-center relative shrink-0 w-full" data-name="hero">
+      <div className="hero-animated-blob" />
       <Frame3 />
       <Frame248 />
     </div>
