@@ -168,7 +168,7 @@ export default function App() {
   }, [portalTarget]);
 
   return (
-    <div className="w-full overflow-x-hidden relative">
+    <div className="w-full min-h-screen overflow-x-hidden relative" style={{ background: "var(--Foundation-neutral-neutral-25, #F5F6FA)" }}>
       <LandingPage />
       {portalTarget  && createPortal(<BuiltFor />, portalTarget)}
       {ellipseTarget && createPortal(<Ellipse />, ellipseTarget)}

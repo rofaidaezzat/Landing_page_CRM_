@@ -287,7 +287,7 @@ export default function SectorsSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div id="sectors-section" className="bg-white min-h-[572px] lg:h-[572px] relative rounded-[28px] shrink-0 w-full max-w-[1200px] z-10 overflow-hidden" data-name="built for">
+    <div id="businesses" className="bg-white min-h-[572px] lg:h-[572px] relative rounded-[28px] shrink-0 w-full max-w-[1200px] z-10 overflow-hidden scroll-mt-6" data-name="built for">
       <div className="relative rounded-[inherit] size-full min-h-[572px] p-4 sm:p-6 lg:p-0">
         <p className="[word-break:break-word] relative lg:absolute font-['Inter:Bold',sans-serif] font-bold leading-[normal] lg:left-[24px] lg:top-[24px] not-italic text-[#141414] text-[28px] sm:text-[36px] lg:text-[40px] w-full lg:w-[458px] pointer-events-none mb-4 lg:mb-0" dir="auto">
           For different sectors

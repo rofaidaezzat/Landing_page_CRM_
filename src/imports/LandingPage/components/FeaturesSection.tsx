@@ -7606,7 +7606,7 @@ function Frame281() {
 
 function MobileApp() {
   return (
-    <div className="bg-white min-h-[309px] h-auto lg:h-[309px] relative rounded-[28px] shrink-0 w-full p-4 sm:p-6 lg:p-0" data-name="mobile app">
+    <div id="mobile-app" className="bg-white min-h-[309px] h-auto lg:h-[309px] relative rounded-[28px] shrink-0 w-full p-4 sm:p-6 lg:p-0 scroll-mt-6" data-name="mobile app">
       <div className="overflow-clip relative rounded-[inherit] size-full flex flex-col lg:block">
         <Frame281 />
         <Frame279 />
@@ -7619,7 +7619,7 @@ function MobileApp() {
 
 export default function FeaturesSection() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] sm:gap-[64px] items-start relative shrink-0 w-full max-w-[1200px] overflow-hidden" data-name="features section">
+    <div id="features" className="content-stretch flex flex-col gap-[32px] sm:gap-[64px] items-start relative shrink-0 w-full max-w-[1200px] overflow-hidden scroll-mt-6" data-name="features section">
       <Frame263 />
       <Ai />
       <MobileApp />

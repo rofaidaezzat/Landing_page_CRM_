@@ -73,7 +73,7 @@ export default function BuiltFor() {
   };
 
   return (
-    <div id="faq-section" className="bg-white relative rounded-[28px] shrink-0 w-full max-w-[1248px] p-[16px] sm:p-[32px] z-10 border border-[#d4d5d8] shadow-sm" data-name="built for">
+    <div id="faqs" className="bg-white relative rounded-[28px] shrink-0 w-full max-w-[1248px] p-[16px] sm:p-[32px] z-10 border border-[#d4d5d8] shadow-sm scroll-mt-28" data-name="built for">
       <div className="content-stretch flex flex-col gap-[24px] items-start relative w-full self-stretch">
         <p className="[word-break:break-word] font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative shrink-0 text-[#141414] text-[32px] sm:text-[40px] self-stretch w-full" dir="auto">
           FAQs

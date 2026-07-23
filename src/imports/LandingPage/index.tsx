@@ -25,7 +25,11 @@ function Frame296() {
 
 export default function LandingPage() {
   return (
-    <div className="bg-[#f5f6fa] content-stretch flex flex-col gap-[40px] md:gap-[80px] lg:gap-[120px] items-center relative size-full max-w-full overflow-x-hidden" data-name="Landing page">
+    <div
+      className="content-stretch flex flex-col gap-[40px] md:gap-[80px] lg:gap-[120px] items-center relative size-full max-w-full overflow-x-hidden"
+      style={{ background: "var(--Foundation-neutral-neutral-25, #F5F6FA)" }}
+      data-name="Landing page"
+    >
       <Navbar />
       <Frame296 />
       <Footer />

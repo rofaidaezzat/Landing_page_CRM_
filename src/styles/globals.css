@@ -1,3 +1,19 @@
+:root {
+  --Foundation-neutral-neutral-25: #F5F6FA;
+  --Foundation-brand-brand-200: #8A9ABD;
+  --Foundation-neutral-neutral-950: #141414;
+}
+
+html,
+body,
+#root {
+  background-color: #F5F6FA !important;
+  background: var(--Foundation-neutral-neutral-25, #F5F6FA) !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
 /* Sector image fade-in animation */
 @keyframes sectorFadeIn {
   from {
@@ -31,4 +47,52 @@
     scale: 1.05 1.05;
   }
 }
+
+@keyframes kf_4644_18512_opacity_0 {
+  0% {
+    opacity: 1;
+  }
+  15.042% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    opacity: 1;
+  }
+  16.674% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes kf_4644_18512_translate_0 {
+  0% {
+    translate: 0px 0px;
+  }
+  4.011% {
+    translate: 0px 0px;
+  }
+  12.187% {
+    translate: -349.729px 103.199px;
+  }
+  100% {
+    translate: -349.729px 103.199px;
+  }
+}
+
+@keyframes kf_4644_18512_scale_0 {
+  0% {
+    scale: 0.75 0.75;
+  }
+  12.96% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    scale: 0.75 0.75;
+  }
+  14.785% {
+    scale: 1 1;
+  }
+  100% {
+    scale: 1 1;
+  }
+}
+
 
