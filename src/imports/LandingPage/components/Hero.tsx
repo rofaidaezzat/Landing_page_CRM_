@@ -17,7 +17,7 @@ function Frame2() {
           <span className="leading-[normal]">{`Grow Your `}</span>
           <span className="leading-[normal] text-[#00236f]">Business</span>
         </p>
-        <p className="leading-[normal] text-[32px] sm:text-[48px] md:text-[64px]">{` With Smarter Sales CRM`}</p>
+        <p className="leading-[normal] text-[32px] sm:text-[48px] md:text-[64px]">{`With Smarter Sales CRM`}</p>
       </div>
       <div className="font-['Inter:Regular',sans-serif] font-normal relative shrink-0 text-[#464646] text-[14px] sm:text-[16px] w-full px-2">
         <p className="leading-[1.4] mb-0">{`Everything your sales team needs to organize leads, track performance, `}</p>

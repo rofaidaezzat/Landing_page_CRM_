@@ -13,3 +13,22 @@
 .sector-image-fade {
   animation: sectorFadeIn 0.35s ease-out both;
 }
+
+@keyframes kf_3472_7369_scale_0 {
+  0% {
+    animation-timing-function: ease-in-out;
+    scale: 0.2 0.2;
+  }
+  32.26% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    scale: 1 1;
+  }
+  64.713% {
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+    scale: 0.2 0.2;
+  }
+  100% {
+    scale: 1.05 1.05;
+  }
+}
+

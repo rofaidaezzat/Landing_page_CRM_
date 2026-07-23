@@ -171,22 +171,20 @@ export default function ProblemSection() {
   return (
     <div className="bg-white relative rounded-[28px] shrink-0 w-full max-w-[1200px]" data-name="problem section">
       <div className="content-stretch flex flex-col gap-[40px] sm:gap-[56px] items-center justify-center overflow-clip p-[16px] sm:p-[32px] relative rounded-[inherit] size-full">
-        <div className="-translate-x-1/2 absolute bottom-[-94px] h-[369px] left-1/2 w-[690px] pointer-events-none hidden lg:block">
-          <div className="absolute inset-[-81.3%_-43.48%] pointer-events-none">
-            <svg className="block size-full pointer-events-none" fill="none" preserveAspectRatio="none" viewBox="0 0 1290 969">
-              <g filter="url(#filter0_f_1_4134)" id="Ellipse 2">
-                <ellipse cx="645" cy="484.5" fill="var(--fill-0, #8A9ABD)" rx="345" ry="184.5" />
-              </g>
-              <defs>
-                <filter colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse" height="969" id="filter0_f_1_4134" width="1290" x="0" y="0">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape" />
-                  <feGaussianBlur result="effect1_foregroundBlur_1_4134" stdDeviation="150" />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
+        <div
+          className="pointer-events-none hidden lg:block"
+          style={{
+            borderRadius: "690px",
+            background: "var(--Foundation-brand-brand-200, #8A9ABD)",
+            filter: "blur(150px)",
+            position: "absolute",
+            left: "255px",
+            bottom: "-94px",
+            width: "690px",
+            height: "369px",
+            animation: "kf_3472_7369_scale_0 12.464268s linear infinite alternate",
+          }}
+        />
         <Frame306 />
         <Frame307 />
       </div>
