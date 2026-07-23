@@ -144,20 +144,6 @@ export default function App() {
       frame3.insertBefore(orbitEl, frame3.firstChild);
       setEllipseTarget(orbitEl);
     }
-
-    // (c) Navbar spacer — the navbar is now position:fixed (removed from flow).
-    //     Insert a same-height spacer after it so the hero content isn't hidden behind it.
-    const root   = document.querySelector("[data-name='Landing page']") as HTMLElement | null;
-    const navbar = root?.children[0] as HTMLElement | undefined;
-    if (root && navbar) {
-      const navH   = navbar.getBoundingClientRect().height;
-      const spacer = document.createElement("div");
-      spacer.style.height     = `${navH}px`;
-      spacer.style.flexShrink = "0";
-      spacer.setAttribute("data-navbar-spacer", "true");
-      // Insert immediately after the navbar (before Frame296)
-      root.insertBefore(spacer, navbar.nextSibling);
-    }
   }, []);
 
   /* Phase 2: animation setup. Runs after the portal has rendered the new
